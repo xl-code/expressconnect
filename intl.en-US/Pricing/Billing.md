@@ -6,9 +6,7 @@ Express Connect only supports the Subscription billing method. Only the initiato
 
 ## Billing for a physical connection {#section_oc1_tyq_ydb .section}
 
-The fee of the physical connection \(connecting an on-premises IDC to a VPC\) includes the physical connection \(leased line\) fee
-
-**Note:** and the router interface fee as shown in the following table.
+The fee of the physical connection \(connecting an on-premises IDC to a VPC\) includes the physical connection \(leased line\) fee and the router interface fee, as shown in the following table.
 
 |Charge item|Description|
 |:----------|:----------|
@@ -44,7 +42,7 @@ The total fee depends on the distance and interface specification. The fee for c
 
 The price here is a reference, take the price on the purchase page as standard. If you have any problems, contact your customer manager.
 
-**Note:** Before October 1, 2018, same-region interconnection between two VPCs or between a VPC and a VBR is free of charge.
+**Note:** Before April 1, 2019, the interconnection between two VPCs or between a VPC and a VBR is free in the same region of charge.
 
 |Specification \(Gbps\) |Price before April 1, 2019 \(RMB/month\)|Price after April 1, 2019 \(RMB/month\)|
 |:----------------------|:---------------------------------------|:--------------------------------------|
