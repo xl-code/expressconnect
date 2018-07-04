@@ -42,7 +42,7 @@ The total fee depends on the distance and interface specification. The fee for c
 
 The price here is a reference, take the price on the purchase page as standard. If you have any problems, contact your customer manager.
 
-**Note:** Before April 1, 2019, the interconnection between two VPCs or between a VPC and a VBR is free in the same region of charge.
+**Note:** Before April 1, 2019, the interconnection between two VPCs or between a VPC and a VBR in the same region is free of charge.
 
 |Specification \(Gbps\) |Price before April 1, 2019 \(RMB/month\)|Price after April 1, 2019 \(RMB/month\)|
 |:----------------------|:---------------------------------------|:--------------------------------------|
