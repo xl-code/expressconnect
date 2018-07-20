@@ -31,8 +31,8 @@ The port leasing fee is charged on a daily basis, as shown in the following tabl
 
 |Specification\(Gbps\)|Price before October 1, 2018\(USD/Month\)|Price after October 1, 2018\(USD/Month\)|
 |:--------------------|:----------------------------------------|:---------------------------------------|
-|1.|0|20|
-|October|0|170|
+|1|0|20|
+|10|0|170|
 
 ## Billing for VPC interconnection {#section_f21_tyq_ydb .section}
 
