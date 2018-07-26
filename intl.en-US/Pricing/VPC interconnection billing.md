@@ -7,7 +7,7 @@ The billing method of the VPC interconnection is as follows:
 |Billing method|Description|Upgrade or downgrade|Overdue instruction|
 |:-------------|:----------|:-------------------|:------------------|
 |Subscription|Monthly or yearly subscription and the billing unit is USD/month.|Not supported.| -   If you recharge your account within 24 hours after the bill is overdue, your configuration will not be affected.
--   When the router interface is overdue for more than 24 hours, the interface will stop forwarding data and be locked
+-   When the router interface is overdue for more than 24 hours, the interface will stop forwarding data and be locked.
 -   After the interface is renewed, the interface recovers the forwarding service immediately.
 
  |
