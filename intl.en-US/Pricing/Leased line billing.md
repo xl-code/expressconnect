@@ -41,6 +41,8 @@ Billed items of the leased line are as follows.
 |:---------------------|:-------------------|
 |1|1,500|
 |10|1,500|
+|40|1,500|
+|100|1,500|
 
 The resource occupation fees ofAlibaba Cloud-side data centers, devices, and leased lines are as follows: This fees are not charged until October 1, 2018.
 
@@ -48,4 +50,6 @@ The resource occupation fees ofAlibaba Cloud-side data centers, devices, and lea
 |:---------------------|:-------------------------|
 |1|85|
 |10|720|
+|40|2450|
+|100|5200|
 
