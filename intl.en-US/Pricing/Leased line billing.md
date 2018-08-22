@@ -12,19 +12,19 @@ The billing of leased lines is as follows:
 
  |
 
-## Billed items {#section_oc1_tyq_ydb .section}
+## Billing items {#section_oc1_tyq_ydb .section}
 
-Billed items of the leased line are as follows.
+Billing items of the leased line are as follows.
 
 |Billing item|Description|
 |:-----------|:----------|
-|Leased line rental fee|Charged by the carrier or partner. based on bandwidth and distance.|
+|Leased line rental fee|Charged by the network operator based on bandwidth and distance.|
 |Leased line installation fee| Charged by Alibaba Cloud, including device purchase fee, on-site construction, maintenance fee and so on.
 
- For more information, see [Table 1](#table_vr3_5dc_p2b).
+ For more information, see [Table 1](#table_vr3_5dc_p2b). 
 
  |
-|Resource occupation fee| Charged by Alibaba Cloud. For more information, see [Table 2](#table_ukw_xdc_p2b).
+|Resource occupation fee| Charged by Alibaba Cloud, the cost includes the occupation of resources such as Alibaba Cloud data center, optical cable, transmission and so on. For more information, see [Table 2](#table_ukw_xdc_p2b). 
 
  *This fee is not charged until October 1, 2018.*
 
@@ -35,21 +35,21 @@ Billed items of the leased line are as follows.
 
  |
 
-##  Pricing {#section_acg_bcc_p2b .section}
+## Pricing {#section_acg_bcc_p2b .section}
 
 |Specification \(Gbps\)|One-time fee \(USD\)|
 |:---------------------|:-------------------|
 |1|1,500|
-|10|1,500|
-|40|1,500|
 |100|1,500|
+|400|1,500|
+|1,000|1,500|
 
-The resource occupation fees ofAlibaba Cloud-side data centers, devices, and leased lines are as follows: This fees are not charged until October 1, 2018.
+The resource occupation fees of Alibaba Cloud-side data centers, devices, and leased lines are as follows: This fees are not charged until October 1, 2018.
 
 |Specification \(Gbps\)|Subscription \(USD/month\)|
 |:---------------------|:-------------------------|
 |1|85|
 |10|720|
-|40|2450|
-|100|5200|
+|400|2450|
+|1,000|5200|
 
