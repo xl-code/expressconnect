@@ -8,7 +8,7 @@ This tutorial uses the following scenario to illustrate how to connect a local d
 
 A company has a local data center \(CIDR block: 172.16.0.0/12\) in Beijing, and has a VPC \(CIDR block: 192.168.0.0/16\) in the region of China \(Hangzhou\) \(CIDR block: 192.168.0.0/16\). To solve single point of failure \(SPOF\), the company plans to apply for two leased lines provided by two different carriers separately to connect the local data center to the access point of Alibaba Cloud in Beijing.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13851/15349338933977_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13851/15349340773977_en-US.png)
 
 ## Step 1 Apply for the first physical line {#section_phg_tj1_ydb .section}
 
@@ -37,7 +37,7 @@ Follow these steps to apply for the second leased line:
 
 1.  Log on to the [Express Connect console](https://vpc.console.aliyun.com/expressConnect#/connection/cn-hangzhou/list).
 2.  In the left-side navigation pane, select **Physical Connection** \> **Leased Line**.
-3.  Click **Apply for Leased Line Access**. 您可以直接联系阿里云合作伙伴，阿里云合作伙伴将会为您提供一站式服，也可以选择自助申请，本操作以自助申请为例。
+3.  Click **Apply for Leased Line Access**.
 4.  Configure the second leased line. The following are configurations used in this tutorial. For more information, see [Apply for leased line access](intl.en-US/User Guide/Physical line/Apply for leased line access.md#).
     -   **Leased Line Name**: Enter a name for the leased line. In this tutorial, Beijing\_Local\_2 is entered.
     -   **Access Point**: Select the access point closest to the local data center. In this tutorial, select **China North 2 \(Beijing\)** \> **ap-cn-beijing-dx-A**.
