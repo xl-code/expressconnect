@@ -46,8 +46,6 @@
 
     大约一分钟后，返回路由器接口列表页面。选择华北2\(北京\)地域，即可看到账号A的路由器接口。为方便表示，本操作中以ri-AAA表示账号A的路由器接口ID。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/4206_zh-CN.png)
-
 
 ## 步骤二 创建接受端路由器接口 {#section_npq_lgr_ydb .section}
 
@@ -97,9 +95,6 @@
 创建路由器接口后，完成以下操作为两端的VPC配置路由：
 
 1.  在路由器接口列表页面，找到目标路由器接口，然后单击**路由配置**。
-
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/4205_zh-CN.png)
-
 2.  在虚拟路由器列表页面，单击**添加路由**。
 3.  在弹出的对话框中，配置路由：
     -   **目标网段**：输入对端进行通信的VPC或交换机的网段。
@@ -113,5 +108,36 @@
     |:---|:--|:-|
     |172.16.100.0/24（VPC B的交换机网段）|VPC A的路由器接口|VPC A的路由表配置|
     |192.168.100.0/24（VPC A的交换机网段）|VPC B的路由器接口|VPC B的路由表配置|
+
+
+## 步骤五 配置安全组 {#section_zx1_ndf_hfb .section}
+
+在两个VPC间建立对等连接后，可以通过跨账号授权的方式配置安全组规则，实现两个VPC内的ECS实例间的访问控制。
+
+本操作以下表中的ECS实例和安全组配置为例。
+
+|配置信息|账号A|账号B|
+|:---|:--|:--|
+|账号ID|AccountID\_A|AccountID\_B|
+|ECS实例例ID|InstanceID\_A|InstanceID\_B|
+|安全组ID|SecurityGroupID\_A|SecurityGroupID\_B|
+
+您可以在[账号中心](https://account.console.aliyun.com/?spm=5176.2020520001.aliyun_topbar.39.4cb94bd3LoJmJ3#/secure)查看账号ID。
+
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21767/153811524113076_zh-CN.png)
+
+完成以下操作，配置安全组规则：
+
+1.  登录[云服务器ECS管理控制台](https://ecs.console.aliyun.com/#/home)。
+2.  在左侧导航栏，单击**网络和安全** \> **安全组**。
+3.  选择实例的地域。
+4.  找到目标安全组，然后单击**配置规则**。
+5.  在安全组规则页面，单击**添加安全组规则**。
+6.  配置安全组规则，根据您的需要选择协议类型并输入端口。其中：
+
+    -   **授权类型**：选择**安全组访问**，并选择**跨账号授权**。
+    -   **授权对象**：输入允许访问实例关联的安全组ID。
+    -   **账号ID**：输入对端账号的ID。
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21769/153811524113078_zh-CN.png)
 
 
