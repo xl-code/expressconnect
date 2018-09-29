@@ -2,24 +2,15 @@
 
 As shown in the following figure, this tutorial provides a step-by-step guidance on connecting an on-premises local data center to the Alibaba Cloud VPC by using the physical connection.
 
-## Example {#section_c5n_rhr_ydb .section}
-
-In this tutorial, the VPC and local data center configurations in the following figure are used.
-
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/15378859114207_en-US.jpg)
-
 ## Prerequisites {#section_cs5_qhr_ydb .section}
 
 You have submitted a ticket and obtained the geographic position of the access point.
 
 ## Step 1: Apply for a leased line {#section_ds5_qhr_ydb .section}
 
-1.  Log on to [Express Connect console](https://vpc.console.aliyun.com/expressConnect#/connection/cn-beijing/list).
+1.  Log on to the [Express Connect console](https://vpc.console.aliyun.com/expressConnect#/connection/cn-beijing/list).
 2.  In the left-side navigation pane, click **Physical Connection** \> **Leased Line**.
 3.  Click **Apply for Leased Line Access**.
-
-    您可以直接联系阿里云合作伙伴，阿里云合作伙伴将会为您提供一站式服，也可以选择自助申请，本操作以自助申请为例。
-
 4.  Configure the leased line. The following are the settings used in this tutorial.
     -   **Leased Line Name**: Enter a name for the leased line. In this tutorial, Beijing\_Local is entered.
 
@@ -27,9 +18,9 @@ You have submitted a ticket and obtained the geographic position of the access p
 
     -   **Carrier**: Select a network operator. In this tutorial, **Other \(China\)** is selected.
 
-    -   **Access Port Type**: Select a port used by the leased line. In this tutorial, **100Base-T-100M electrical port** is selected.
+    -   **Access Port Type**: Select a port used by the leased line. In this tutorial, **100Base-LR-10G Single-Mode Optical Port \(10km\)** is selected.
 
-    -   **Access Bandwidth**:  Select a bandwidth for the leased line. In this tutorial, **100 Mbit/sport** is selected.
+    -   **Bandwidth for Access**: Select a bandwidth for the leased line. In this tutorial, **100** is entered.
 
     -   **Peer Address of Leased Line**:  Enter the address of your local data center. For example, No. XX, XX Street, XX District, Beijing
 
@@ -57,7 +48,7 @@ You have submitted a ticket and obtained the geographic position of the access p
 
 Follow these steps to create a VBR:
 
-1.  Log on to [Express Connect console](https://vpc.console.aliyun.com/expressConnect#/connection/cn-beijing/list).
+1.  Log on to the [Express Connect console](https://vpc.console.aliyun.com/expressConnect#/connection/cn-beijing/list).
 2.  In the left-side navigation pane, click **Physical Connection** \> **Virtual Border Router**.
 3.  Click **Create VBR**. The following are the settings used in this tutorial.
     -   **Object**: Select **This Account**.
@@ -91,7 +82,7 @@ Create a router interface for the VPC and VBR separately to create a communicati
 
 Follow these steps to create router interfaces:
 
-1.  Log on to [Express Connect console](https://vpc.console.aliyun.com/expressConnect#/connection/cn-beijing/list).
+1.  Log on to the [Express Connect console](https://vpc.console.aliyun.com/expressConnect#/connection/cn-beijing/list).
 2.  In the left-side navigation pane, click **VPC Connection** \> **Router Interface**.
 3.  Click **Create Router Interface**.
 4.  Configure the router interface and complete the payment.
@@ -111,6 +102,7 @@ Follow these steps to create router interfaces:
 
     -   **Peer VPC ID**: Select the VPC to be connected.
 
+    -   **Specification**: Select a specification.
 
 After the router interface is created, the system creates a router interface for the VRouter and the VBR respectively and initiates the connection.
 
@@ -123,8 +115,8 @@ Add route entry in VPC:
 Follow these steps to route the traffic destined for the IDC \(CIDR Block: 172.16.0.0/12\) to the leased line:
 
 1.  On the Router Interface page, find the target VPC router interface and click **Route Configuration**.
-2.  In the displayed dialog box, configure the route:
-    -   **Destination CIDR Block**: The CIDR block of the local data center. In this example, enter 172.16.0.0/12.
+2.  In the displayed dialog box, configure the route according to the following information:
+    -   **Destination CIDR Block**: Enter the CIDR block of the local data center. In this example, enter 172.16.0.0/12.
     -   **Next Hop Type**: Select **Router Interface \(To VBR\)**.
     -   **Router Interface**: Select the router interface created for the VPC in the step 3.
 
@@ -134,7 +126,7 @@ Add route entries in VBR
 
     Follow these steps to route the traffic destined for the IDC \(CIDR Block: 172.16.0.0/12\) to the leased line:
 
-    1.  Log on to [Express Connect console](https://vpc.console.aliyun.com/expressConnect#/connection/cn-beijing/list).
+    1.  Log on to the [Express Connect console](https://vpc.console.aliyun.com/expressConnect#/connection/cn-beijing/list).
     2.  In the left-side navigation pane, click **Physical Connection** \> **Virtual Border Router**.
     3.  Click the ID of the target router interface and click **Add Route Entry**.
     4.  In the displayed dialog box, configure the route:
@@ -143,15 +135,13 @@ Add route entries in VBR
         -   **Router Interface**: Select the router interface created for the VBR.
     5.  Click ****OK**** and complete the configuration.
 
-        Then you can access the Alibaba Cloud-side IP address 10.100.0.1 from the local data center.
-
-        ![](images/4209_en-US.png)
+        Then you can access the Alibaba-side IP address 10.100.0.1 from the local data center.
 
 -   Add a route entry pointing to the VPC
 
     Follow these steps to route the traffic destined for the VPC \(CIDR Block: 192.168.0.0/16\) to the VPC:
 
-    1.  Log on to [Express Connect console](https://vpc.console.aliyun.com/expressConnect#/connection/cn-beijing/list).
+    1.  Log on to the [Express Connect console](https://vpc.console.aliyun.com/expressConnect#/connection/cn-beijing/list).
     2.  In the left-side navigation pane, click **Physical Connection** \> **Virtual Border Router**.
     3.  Click the ID of the target router interface and click **Add Route Entry**.
     4.  In the displayed dialog box, configure the route:
@@ -160,14 +150,11 @@ Add route entries in VBR
         -   **Router Interface**: Select the router interface associated with the VPC.
     5.  Click ****OK**** and complete the configuration.
 
-        ![](images/4211_en-US.png)
-
-
 Configure the route of the local data center
 
 Now the route configuration for the Alibaba Cloud side is completed. However, to establish the connection from the IDC to the VPC, you must add a route entry for the gateway of you IDC to route traffic destined for the VPC to the IP address of the Alibaba Cloud side. You can configure a static route or BGP dynamic routing to forward data in the local data center to VBR:
 
--   Static route
+-   Static routes
 
     Example:
 
