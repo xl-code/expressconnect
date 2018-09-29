@@ -166,9 +166,9 @@ Now the route configuration for the Alibaba Cloud side is completed. However, to
 
     You can also use BGP to connect the VBR and the local data center.
 
-    1.  Create a BGP peer group, see [Create BGP peer groups](https://help.aliyun.com/document_detail/57974.html).
-    2.  Add BGP peers to the BGP group, see [Create BGP peers](https://help.aliyun.com/document_detail/57975.html).
-    3.  Advertise the BGP network in the VBR, see [Advertise BGP network](https://help.aliyun.com/document_detail/58738.html).
+    1.  Create a BGP peer group, see [Manage BGP peer groups](../../../../intl.en-US/User Guide/BGP/Manage BGP peer groups.md#).
+    2.  Add BGP peers to the BGP group, see [Create a BGP peer](../../../../intl.en-US/User Guide/BGP/Manage BGP peers.md#section_fxm_rbb_ydb).
+    3.  Advertise the BGP network in the VBR, see [Advertise a BGP network](../../../../intl.en-US/User Guide/BGP/Advertise a BGP network.md#).
 
         **Note:** Ensure the destination CIDR block of the BGP route entry is the static route that you have configured. In this tutorial, it is 192.168.0.0/16.
 
@@ -179,5 +179,5 @@ When the routing configuration is complete, intranet communication link between 
 
 ## Step 5: Test the performance {#section_kt5_qhr_ydb .section}
 
-See [Test on the network performance of leased line](https://help.aliyun.com/document_detail/58625.html) to test the rate of leased line to meet the business needs.
+See [Method for testing the network performance of the leased line](../../../../intl.en-US/Best Practices/Method for testing the network performance of the leased line.md#) to test the rate of leased line to meet the business needs.
 
