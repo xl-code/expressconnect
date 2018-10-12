@@ -2,12 +2,14 @@
 
 高速通道产品涉及到的跨境专线功能由中国联通运营。如果您需要创建跨境（中国大陆到境外（含香港））VPC互通，需要在预付费（中国联通跨境）或后付费（中国联通跨境）页面购买。
 
+**说明：** 如果您首次使用高速通道实现两个VPC互通，推荐您使用云企业（CEN），详情参见[教程概览](../../../../cn.zh-CN/快速入门/教程概览.md#)。
+
 1.  登录[高速通道控制台](https://expressconnectnext.console.aliyun.com)。 
 2.  在左侧导航栏，单击**专有网络对等连接** \> **VPC互连**。 
 3.  单击**创建对等连接**。 
 4.  单击**预付费（中国联通跨境）**或**后付费（中国联通跨境）**。 
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15123/15392643916487_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15123/15393443836487_zh-CN.png)
 
 5.  配置对等连接。 同账号VPC互通，参见[同账号VPC互连](cn.zh-CN/快速入门（新版）/同账号VPC互连.md#)。跨账号VPC互通，参见[跨账号VPC互连](cn.zh-CN/快速入门（新版）/跨账号VPC互连.md#)。
 6.  单击**立即购买**。 
@@ -16,6 +18,6 @@
 
     资料上传联通审核通过后，完成支付即可。审核会在一个工作日内完成。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15123/15392643916499_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15123/15393443836499_zh-CN.png)
 
 
