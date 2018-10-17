@@ -6,7 +6,7 @@ As shown in the following figure, this tutorial provides a step-by-step guidance
 
 In this tutorial, the VPC and local data center configurations in the following figure are used.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/15397431804207_en-US.jpg)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/15397440894207_en-US.jpg)
 
 ## Prerequisites {#section_cs5_qhr_ydb .section}
 
@@ -142,7 +142,7 @@ Add route entries in VBR
 
         Then you can access the Alibaba Cloud-side IP address 10.100.0.1 from the local data center.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/15397431804209_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/15397440894209_en-US.png)
 
 -   Add a route entry pointing to the VPC
 
@@ -157,7 +157,7 @@ Add route entries in VBR
         -   **Router Interface**: Select the router interface associated with the VPC.
     5.  Click ****OK**** and complete the configuration.
 
-        ![](images/4211_en-US.png)
+        ![](images/4211_en-US_source.png)
 
 
 Configure the route of the local data center
