@@ -6,7 +6,7 @@ As shown in the following figure, this tutorial provides a step-by-step guidance
 
 In this tutorial, the VPC and local data center configurations in the following figure are used.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/15382987984207_en-US.jpg)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/15397431804207_en-US.jpg)
 
 ## Prerequisites {#section_cs5_qhr_ydb .section}
 
@@ -17,9 +17,6 @@ You have submitted a ticket and obtained the geographic position of the access p
 1.  Log on to [Express Connect console](https://partners-intl.console.aliyun.com/#/ri).
 2.  In the left-side navigation pane, click **Physical Connection** \> **Leased Line**.
 3.  Click **Apply for Leased Line Access**.
-
-    您可以直接联系阿里云合作伙伴，阿里云合作伙伴将会为您提供一站式服，也可以选择自助申请，本操作以自助申请为例。
-
 4.  Configure the leased line. The following are the settings used in this tutorial.
     -   **Leased Line Name**: Enter a name for the leased line. In this tutorial, Beijing\_Local is entered.
 
@@ -145,7 +142,7 @@ Add route entries in VBR
 
         Then you can access the Alibaba Cloud-side IP address 10.100.0.1 from the local data center.
 
-        ![](images/4209_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/15397431804209_en-US.png)
 
 -   Add a route entry pointing to the VPC
 
