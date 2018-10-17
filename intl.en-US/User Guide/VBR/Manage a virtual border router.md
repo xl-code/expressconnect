@@ -31,6 +31,3 @@ Before deleting a leased line, you need to delete VBRs associated with the lease
 2.  In the left-side navigation pane, select **Physical Connection** \> **Virtual Border Router**.
 3.  Click **Delete** in the **Actions** column of the target VBR, and then click **Confirm** in the displayed dialog box.
 
-    **Note:** 如果所删除的边界路由器由您的接入合作伙伴创建，当需要再次创建该边界路由器时仍需由其为您创建。
-
-
