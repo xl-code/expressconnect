@@ -4,16 +4,10 @@
 
 A leased line is the abstraction of the network line established between an access point of Alibaba Cloud and a local data center. You must use a leased line of the carrier to connect the local data center to the Alibaba Cloud access point to set up the physical connection.
 
-阿里云高速通道提供合作伙伴和自主申请两种专线接入方式，建议您通过合作伙伴完成专线接入。
-
 ## Limits {#section_kpw_bwz_xdb .section}
 
 -   Physical Connection does not support interfaces of SDH 155M CPOS, V.35 or G.703.
 -   Alibaba Cloud provides one or more access points in each accessible region. Different access points have different carrier restrictions. Before applying for leased line access, open a ticket to obtain the access point and carrier restriction information. 
-
-## 合作伙伴申请 {#section_s11_2wz_xdb .section}
-
-您可以在高速通道管理控制台查看合作伙伴的联系方式：
 
 1.  登录[高速通道管理控制台](https://partners-intl.aliyun.com/login-required#/ri)。
 2.  在左侧导航栏，单击**物理专线连接** \> **物理专线**。
