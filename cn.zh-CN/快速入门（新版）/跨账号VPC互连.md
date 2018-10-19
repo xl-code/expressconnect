@@ -8,7 +8,7 @@
 
 跨账号专有网络互通时，需要分别创建发起端和接收端，然后建立对等连接，最后配置路由。本操作以如下两个VPC为例。账号A的VPC1将作为连接发起端，账号B的VPC2作为连接接收端。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/153934418111706_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/153994257211706_zh-CN.png)
 
 ## 前提条件 {#section_kdw_xbr_ydb .section}
 
@@ -47,7 +47,7 @@
 5.  单击**立即购买**，并完成支付。
 6.  返回专有网络对等连接页面，查看已创建的发起端实例。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/15393441814203_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/15399425724203_zh-CN.png)
 
 
 ## 步骤二 创建接收端 {#section_ugv_m3n_cfb .section}
@@ -80,7 +80,7 @@
 5.  单击**立即购买**，完成支付。
 6.  在专有网络对等连接页面，查看已创建的接收端实例，并记录已创建的接收端实例ID（本操作的实例ID为ri-2zeix2q86uoyisagyz0pn）。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/15393441814204_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/15399425724204_zh-CN.png)
 
 
 ## 步骤三 添加发起端 {#section_w2d_l3f_hfb .section}
@@ -91,13 +91,13 @@
 
 1.  使用账号B登录[高速通道管理控制台](https://expressconnectnext.console.aliyun.com)。
 2.  在左侧导航栏，单击**专有网络对等连接** \> **VPC互连**。
-3.  选择发起端实例的地域。
+3.  选择接收端的地域。
 
-    本操作选择**华北2（北京）**。
+    本操作选择**华北2 （北京）**。
 
 4.  找到已经创建的接收端实例，然后单击**添加发起端**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/153934418113085_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/153994257213085_zh-CN.png)
 
 5.  在添加实例页面，选择**跨账号**，然后输入发起端路由器接口（本操作为ri-m5e33r3n78zyi5573kf85）。单击**确定**。
 
@@ -115,16 +115,16 @@
 
 4.  单击**添加接收端**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/153934418111720_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/153994257211720_zh-CN.png)
 
 5.  在添加实例页面，选择**跨账号**，然后输入接收端路由器接口（本操作为ri-2zeix2q86uoyisagyz0pn）。单击**确定**。
-6.  单击**![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/153934418211689_zh-CN.png)** \> **发起连接**。
+6.  单击**![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/153994257211689_zh-CN.png)** \> **发起连接**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/153934418213014_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/153994257213014_zh-CN.png)
 
     连接成功后，发起端和接收端状态会变成已激活。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/153934418211684_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/153994257311684_zh-CN.png)
 
 
 ## 步骤四 配置路由 {#section_tdw_xbr_ydb .section}
@@ -137,7 +137,7 @@
 2.  在专有网络对等连接页面，找到已创建的对等连接。
 3.  找到发起端实例，然后单击**路由配置**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/153934418213123_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/153994257313123_zh-CN.png)
 
 4.  单击**添加对端路由**，然后输入要连接的VPC或其交换机的网段，单击**确定**。
 
@@ -146,7 +146,7 @@
 5.  使用账号B登录[高速通道管理控制台](https://expressconnectnext.console.aliyun.com)。
 6.  找到接收端实例，然后单击**路由配置**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/153934418211721_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/153994257311721_zh-CN.png)
 
 7.  单击**添加对端路由**，然后输入要连接的VPC或其交换机的网段，单击**确定**。
 
@@ -167,7 +167,7 @@
 
 您可以在[账号中心](https://account.console.aliyun.com/?spm=5176.2020520001.aliyun_topbar.39.4cb94bd3LoJmJ3#/secure)查看账号ID。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/153934418213186_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/153994257313186_zh-CN.png)
 
 完成以下操作，配置安全组规则：
 
@@ -181,7 +181,7 @@
     -   **授权类型**：选择**安全组访问**，并选择**跨账号授权**。
     -   **授权对象**：输入允许访问实例关联的安全组ID。
     -   **账号ID**：输入对端账号的ID。
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/153934418213193_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/153994257313193_zh-CN.png)
 
 
 ## 步骤六 测试 {#section_hj4_55m_cfb .section}
