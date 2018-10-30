@@ -8,7 +8,7 @@
 
 |配置|VPC1|VPC2|
 |:-|:---|:---|
-|VPC ID|vpc-12345678|vpc-87654321|
+|VPC ID|vpc-12345678|vpc-12345678|
 |地域|华北2（北京）|华东1（杭州）|
 |VPC网段|192.168.0.0/16|172.16.0.0/12|
 |交换机网段|192.168.100.0/24|172.16.100.0/24|
@@ -47,11 +47,11 @@
 
 -   发起端路由器接口
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/4203_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21767/154089944212716_zh-CN.png)
 
 -   接受端路由器接口
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/4204_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21767/154089944212717_zh-CN.png)
 
 
 ## 步骤二 配置路由 {#section_tdw_xbr_ydb .section}
@@ -60,7 +60,7 @@
 
 1.  在路由器接口列表页面，找到目标路由器接口，然后单击**路由配置**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/4205_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21767/154089944212718_zh-CN.png)
 
 2.  在虚拟路由器列表页面，单击**添加路由**。
 3.  在弹出的对话框中，配置路由：
@@ -75,5 +75,37 @@
     |:---|:--|:-|
     |172.16.100.0/24（VPC2的交换机网段）|VPC1的路由器接口|VPC1的路由表配置|
     |192.168.100.0/24（VPC1的交换机网段）|VPC2的路由器接口|VPC2的路由表配置|
+
+
+## 步骤三 配置安全组 {#section_zx1_ndf_hfb .section}
+
+在两个VPC间建立对等连接后，可以通过跨账号授权的方式配置安全组规则，实现两个VPC内的ECS实例间的访问控制。
+
+本操作以下表中的ECS实例和安全组配置为例。
+
+|配置信息|账号A|账号A|
+|:---|:--|:--|
+|账号ID|AccountID\_A|AccountID\_A|
+|ECS实例例ID|InstanceID\_A|InstanceID\_B|
+|安全组ID|SecurityGroupID\_A|SecurityGroupID\_B|
+
+您可以在[账号中心](https://account.console.aliyun.com/?spm=5176.2020520001.aliyun_topbar.39.4cb94bd3LoJmJ3#/secure)查看账号ID。
+
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21767/154089944213076_zh-CN.png)
+
+完成以下操作，配置安全组规则：
+
+1.  登录[云服务器ECS管理控制台](https://ecs.console.aliyun.com/#/home)。
+2.  在左侧导航栏，单击**网络和安全** \> **安全组**。
+3.  选择实例的地域。
+4.  找到目标安全组，然后单击**配置规则**。
+5.  在安全组规则页面，单击**添加安全组规则**。
+6.  配置安全组规则，根据您的需要选择协议类型并输入端口。
+
+    **说明：** 如果是跨地域VPC互通，选择地址段访问方式，输入对端VPC的网段。
+
+    如果选择安全组访问方式，确保VPC地域相同。
+
+    本操作中选择IP地址段访问方式。
 
 
