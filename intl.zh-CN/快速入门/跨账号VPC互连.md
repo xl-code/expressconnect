@@ -124,7 +124,7 @@
 
 您可以在[账号中心](https://account.console.aliyun.com/?spm=5176.2020520001.aliyun_topbar.39.4cb94bd3LoJmJ3#/secure)查看账号ID。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21767/153811524113076_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21767/154089948013076_zh-CN.png)
 
 完成以下操作，配置安全组规则：
 
@@ -133,11 +133,12 @@
 3.  选择实例的地域。
 4.  找到目标安全组，然后单击**配置规则**。
 5.  在安全组规则页面，单击**添加安全组规则**。
-6.  配置安全组规则，根据您的需要选择协议类型并输入端口。其中：
+6.  配置安全组规则，根据您的需要选择协议类型并输入端口。
 
-    -   **授权类型**：选择**安全组访问**，并选择**跨账号授权**。
-    -   **授权对象**：输入允许访问实例关联的安全组ID。
-    -   **账号ID**：输入对端账号的ID。
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21769/153811524113078_zh-CN.png)
+    **说明：** 如果是跨地域VPC互通，选择地址段访问方式，输入对端VPC的网段。
+
+    如果选择安全组访问方式，确保VPC地域相同。如果选择并安全组授权方式，选择**跨账号授权**，账号ID请输入对端账号的ID。
+
+    本操作中选择IP地址段访问方式。
 
 
