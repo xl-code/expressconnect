@@ -1,18 +1,12 @@
 # Scenarios {#concept_gkk_vwq_ydb .concept}
 
-Express Connect creates private network channels between two VPCs and between a VPC and a local IDC, enhancing the flexibility of network topology as well as the quality and security of cross-network communication.
+You can use Express Connect to create safe and high-speed private-network communication between two Virtual Private Clouds \(VPCs\) or between a VPC and a local IDC.
+
+## Connect a local IDC to a VPC through a physical connection {#section_jr3_ywq_ydb .section}
+
+If your local IDC needs to communicate with a VPC through a private network, you can use the physical connection function of Express Connect to implement private-network communication on both sides. You can establish a physical connection by yourself or by an Alibaba partner. With the physical connection, you can fulfill private-network communication with high quality, high reliability, and high security between your local IDC and the VPC. Express Connect allows you to accomplish private-network communication between two VPCs, eliminating the risk of network instability and data theft during transmission.
 
 ## Connect two VPCs {#section_ir3_ywq_ydb .section}
 
-You can use Express Connect to achieve private-network communication between two VPCs. Express Connect can avoid the network instability caused by bypassing the public network and eliminate the risk of data theft during transmission.. For more information, see [Establish an intranet connection between VPCs under the same account](../../../../intl.en-US/Tutorials/Establish an intranet connection between VPCs under the same account.md#) and [Establish an intranet connection between VPCs under different accounts](../../../../intl.en-US/Tutorials/Establish an intranet connection between VPCs under different accounts.md#).
-
-## Connect a local IDC with a VPC {#section_jr3_ywq_ydb .section}
-
-If your local IDC needs to communicate with a VPC through a private network, you can use the physical connection function of Express Connect to implement private-network communication on both sides. You can build a physical connection by yourself or contact an Alibaba partner to help you build a physical connection. The communication between the on-premises IDC and the VPC by using the physical connection features high quality, high reliability, and high security. You can use Express Connect to establish intranet communication between two VPCs. Express Connect avoids unstable network quality common in Internet communication and prevents data leakage. For more information, see [Connect a local data center to a VPC through a physical connection](../../../../intl.en-US/Tutorials/Connect a local data center to a VPC through a physical connection.md#).
-
-## Two VPCs share a Nat Gateway {#section_kr3_ywq_ydb .section}
-
-If two VPCs need to use the same NAT Gateway to access the Internet, you can also use Express Connect.
-
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13819/15397427974202_en-US.jpg)
+You can use Express Connect to implement private-network communication between two VPCs. Express Connect supports cross-region VPC interconnection.
 
