@@ -8,7 +8,7 @@
 
 跨账号专有网络互通时，需要分别创建发起端和接收端，然后建立对等连接，最后配置路由。本操作以如下两个VPC为例。账号A的VPC1将作为连接发起端，账号B的VPC2作为连接接收端。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/154090231711706_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/154108715811706_zh-CN.png)
 
 ## 前提条件 {#section_kdw_xbr_ydb .section}
 
@@ -45,7 +45,7 @@
 5.  单击**立即购买**，并完成支付。
 6.  返回专有网络对等连接页面，查看已创建的发起端实例。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/15409023174203_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/15410871584203_zh-CN.png)
 
 
 ## 步骤二 创建接收端 {#section_ugv_m3n_cfb .section}
@@ -76,7 +76,7 @@
 5.  单击**立即购买**，完成支付。
 6.  在专有网络对等连接页面，查看已创建的接收端实例，并记录已创建的接收端实例ID（本操作的实例ID为ri-2zeix2q86uoyisagyz0pn）。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/15409023174204_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/15410871584204_zh-CN.png)
 
 
 ## 步骤三 添加发起端 {#section_w2d_l3f_hfb .section}
@@ -93,7 +93,7 @@
 
 4.  找到已经创建的接收端实例，然后单击**添加发起端**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/154090231713085_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/154108715813085_zh-CN.png)
 
 5.  在添加实例页面，选择**跨账号**，然后输入发起端路由器接口（本操作为ri-m5e33r3n78zyi5573kf85）。单击**确定**。
 
@@ -111,16 +111,16 @@
 
 4.  单击**添加接收端**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/154090231711720_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/154108715811720_zh-CN.png)
 
 5.  在添加实例页面，选择**跨账号**，然后输入接收端路由器接口（本操作为ri-2zeix2q86uoyisagyz0pn）。单击**确定**。
-6.  单击**![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/154090231711689_zh-CN.png)** \> **发起连接**。
+6.  单击**![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/154108715811689_zh-CN.png)** \> **发起连接**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/154090231713014_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/154108715913014_zh-CN.png)
 
     连接成功后，发起端和接收端状态会变成已激活。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/154090231711684_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/154108715911684_zh-CN.png)
 
 
 ## 步骤五 配置路由 {#section_tdw_xbr_ydb .section}
@@ -133,7 +133,7 @@
 2.  在专有网络对等连接页面，找到已创建的对等连接。
 3.  找到发起端实例，然后单击**路由配置**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/154090231713123_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/154108715913123_zh-CN.png)
 
 4.  单击**添加对端路由**，然后输入要连接的VPC或其交换机的网段，单击**确定**。
 
@@ -142,7 +142,7 @@
 5.  使用账号B登录[高速通道管理控制台](https://expressconnectnext.console.aliyun.com)。
 6.  找到接收端实例，然后单击**路由配置**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/154090231811721_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/154108715911721_zh-CN.png)
 
 7.  单击**添加对端路由**，然后输入要连接的VPC或其交换机的网段，单击**确定**。
 
@@ -163,7 +163,7 @@
 
 您可以在[账号中心](https://account.console.aliyun.com/?spm=5176.2020520001.aliyun_topbar.39.4cb94bd3LoJmJ3#/secure)查看账号ID。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/154090231813186_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/154108715913186_zh-CN.png)
 
 完成以下操作，配置安全组规则：
 
