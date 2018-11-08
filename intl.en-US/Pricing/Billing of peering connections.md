@@ -1,31 +1,35 @@
 # Billing of peering connections {#concept_ekt_hyq_ydb .concept}
 
-Peering connection supports the Subscription billing method.
+The billing method of peering connections is Subscription.
 
 ## Billing method {#section_op1_jyq_ydb .section}
 
-|Billing method|Description|Upgrade or downgrade|Overdue instruction|
-|:-------------|:----------|:-------------------|:------------------|
-|Subscription|Subscription on a monthly basis| Real-time upgrade is supported.
+|Billing method|Description|Upgrade or downgrade|Overdue payment instruction|
+|:-------------|:----------|:-------------------|:--------------------------|
+|Subscription|Monthly or yearly subscription with the billing unit of USD/month| Real-time upgrades are supported.
 
- Temporary upgrade is supported.
+ Temporary upgrades are supported.
 
- Renewal upgrade or downgrade is supported.
+ Upgrades or downgrades are supported after subscription renewal.
 
- | -   When the initiator instance is overdue for more than 24 hours, the instance will stop forwarding data and be locked.
--   If you renew your account within 24 hours after the bill is overdue, your configuration will not be affected.
--   The service will be restarted immediately after you renew your account.
--   If the initiator instance is overdue and locked for more than 15 days, the initiator instance will be reclaimed, the configurations will be cleared and cannot be recovered.
+ Real-time downgrade is not supported
+
+ | -   When the initiator instance is overdue for more than 24 hours, it will stop forwarding data and be locked.
+-   If you recharge your account within 24 hours after the bill is overdue, your configuration will not be affected.
+-   After your account is settled, the initiator instance will immediately restart data forwarding and be unlocked.
+-   If the initiator instance is overdue and locked for more than 15 days, it will be reclaimed. The configuration will be cleared and cannot be restored.
 
  |
 
-## Peer connection fee {#section_oc1_tyq_ydb .section}
+## Peering connection fee {#section_oc1_tyq_ydb .section}
 
-In the process of peering connection, Alibaba Cloud only charges fee on the initiator instance and does not charge the receiver instance. The fee is charged according to the bandwidth of the initiator instance and the distance between the two instances. The costs of VPC interconnection in the same region is lower than that of VPC interconnection across regions.
+In the process of peering connection, Alibaba Cloud charges for the initiator instance but does not charge for the acceptor instance. The fee depends on the bandwidth of the initiator instance and the distance between the two instances. The fee of VPC interconnection in the same region is lower than that of VPC interconnection between different regions.
 
--   For the prices of cross-region interconnection, take the price on the purchase page as standard. If you have any problem, contact your customer manager.
+-   Cross-region interconnections are charged according to the prices shown on the purchase page. If you have any problem, contact your customer manager.
 
--   For the prices of same-region interconnection, see the price in the following table. This fee is not charged until April 1, 2019.
+**Note:** Before December 31, 2020, VPC interconnection between North China 2 \(Beijing\) and North China 5 \(Hohhot\), and North China 2 \(Beijing\) and North China 3 \(Zhangjiakou\) will be free.
+
+-   Same-region interconnections are charged according to the price listed in the following table. This fee will not be charged until December 31, 2020.
 
 |Bandwidth \(Gbps\)|Initiator instance fee \(USD/month\)|
 |:-----------------|:-----------------------------------|
