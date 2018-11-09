@@ -27,7 +27,7 @@ In the process of peering connection, Alibaba Cloud charges for the initiator in
 
 -   Cross-region interconnections are charged according to the prices shown on the purchase page. If you have any problem, contact your customer manager.
 
-**Note:** Before December 31, 2020, VPC interconnection between North China 2 \(Beijing\) and North China 5 \(Hohhot\), and North China 2 \(Beijing\) and North China 3 \(Zhangjiakou\) will be free.
+**Note:** Before December 31, 2020, VPC interconnection between North China 2 \(Beijing\) and North China 3 \(Zhangjiakou\) is free.
 
 -   Same-region interconnections are charged according to the price listed in the following table. This fee will not be charged until December 31, 2020.
 
