@@ -6,22 +6,23 @@ The following table lists the ASP partners of Alibaba Cloud. They can help you e
 
 **Note:** You must sign contracts and obtain services from third-party network service providers when using NSP partners to access Alibaba Cloud. Additionally, the SLA protection and any issues outside Alibaba Cloud are the responsibility of NSP partners.
 
-|Partners|Hong Kong-A|Hong Kong-B|Tokyo-A|Singapore-A|Singapore-B|Sydney-A|Sydney-B|Frankfurt-A|Frankfurt-B|San Jose-A|Ashburn-A|Dubai-A|
-|--------|-----------|-----------|-------|-----------|-----------|--------|--------|-----------|-----------|----------|---------|-------|
-|China Telecom Global|✔|—|—|—|—|—|—|—|✔|—|—|—|
-|China Unicom Global|—|✔|—|—|—|—|—|—|—|—|—|—|
-|Epsilon|—|—|—|✔|✔|—|—|—|—|—|✔|✔|
-|euNetworks|—|—|—|—|—|—|—|✔|—|—|—|—|
-|GTT|—|—|—|✔|—|—|—|—|—|—|—|—|
-|TATA|—|✔|—|✔|—|—|—|—|—|—|—|—|
-|Megaport|✔|✔|—|✔|✔|✔|✔|—|—|✔|✔|—|
-|PCCW|✔|✔|—|✔|✔|—|—|—|—|—|—|—|
-|Reliance|—|—|—|✔|—|—|—|—|—|—|—|—|
-|SingTel|—|—|—|✔|✔|—|—|—|—|—|—|—|
-|Vodafone|—|—|—|—|—|—|—|✔|—|—|—|—|
-|Zenlayer|✔|—|✔|✔|—|—|—|—|✔|✔|✔|—|
-|Intercloud|—|—|—|—|—|—|—|—|✔|—|—|—|
-|Equinix|✔|—|—|✔|—|—|✔|—|✔|✔|✔|—|
-|HGC|✔|✔|—|—|—|—|—|—|—|—|—|—|
-|NextDC|—|—|—|—|—|✔|✔|—|—|—|—|—|
+|Partners|Hong Kong-A|Hong Kong-B|Tokyo-A|Tokyo-B|Singapore-A|Singapore-B|Sydney-A|Sydney-B|Frankfurt-A|Frankfurt-B|San Jose-A|Ashburn-A|Dubai-A|
+|--------|-----------|-----------|-------|-------|-----------|-----------|--------|--------|-----------|-----------|----------|---------|-------|
+|China Telecom Global|✔|—|—|—|—|—|—|—|—|✔|—|—|—|
+|China Unicom Global|—|✔|—|—|—|—|—|—|—|—|—|—|—|
+|Epsilon|—|—|—|—|✔|✔|—|—|—|—|—|✔|✔|
+|euNetworks|—|—|—|—|—|—|—|—|✔|—|—|—|—|
+|GTT|—|—|—|—|✔|—|—|—|—|—|—|—|—|
+|TATA|—|✔|—|—|✔|—|—|—　|—|—|—|—|—|
+|Megaport|✔|✔|—|—|✔|✔|✔|✔|—|—|✔|✔|—|
+|PCCW|✔|✔|—|—|✔|✔|—|—|—|—|—|—|—|
+|Reliance|—|—|—|—|✔|—　|—|—|—|—|—|—|—|
+|SingTel|—|—|—|—|✔|✔|—|—|—|—|—|—|—|
+|Vodafone|—|—|—|—|—|—|—|—|✔|—|—|—|—|
+|Zenlayer|✔|—|✔|✔|✔|—|—|—|—|✔|✔|✔|—|
+|SoftBank|—|—|✔|✔|—|—|—|—|—|—|—|—|—|
+|Intercloud|—|—|—|—|—|—|—|—|—|✔|—|—|—|
+|Equinix|✔|—|—|—|✔|—|—|✔|—|✔|✔|✔|—　|
+|HGC|✔|✔|—|—|—|—|—|—|—|—|—|—|—|
+|NextDC|—|—|—|—|—|—|✔|✔|—|—|—|—|—|
 
