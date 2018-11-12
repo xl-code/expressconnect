@@ -8,7 +8,7 @@
 
 BGP（Border Gateway Protocol）是一种基于TCP协议的动态路由协议，主要应用于不同自治域间交换路由信息和网络可达信息。在物理专线接入的过程中，您可以使用BGP来实现本地数据中心与边界路由器（VBR）之间的内网互连。BGP可以帮您更高效、灵活且可靠地搭建混合云。
 
-在配置GBP前，您需要创建BGP组。BGP组主要用于简化BGP配置，将需要不断重复的配置合并到一个BGP组后，可以减少配置复杂度。您只需根据ASN建立一个BGP组，然后将符合条件的BGP邻居加入此BGP组即可。加入BGP组之后，BGP邻居将继承BGP组的配置，您不再需要单独配置BGP邻居。
+在配置BGP前，您需要创建BGP组。BGP组主要用于简化BGP配置，将需要不断重复的配置合并到一个BGP组后，可以减少配置复杂度。您只需根据ASN建立一个BGP组，然后将符合条件的BGP邻居加入此BGP组即可。加入BGP组之后，BGP邻居将继承BGP组的配置，您不再需要单独配置BGP邻居。
 
 ## 使用限制 {#section_ksj_qxx_dfb .section}
 
@@ -32,7 +32,7 @@ BGP的使用限制如下：
 3.  选择一个地域，然后单击目标VBR的ID。
 4.  单击**BGP组**页签，然后单击**创建BGP组**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21437/154200595512049_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21437/154201679212049_zh-CN.png)
 
 5.  配置BGP组，然后单击**确定**。
 
@@ -53,7 +53,7 @@ BGP的使用限制如下：
 3.  选择一个地域，然后单击目标VBR的ID。
 4.  单击**BGP邻居**页签，然后单击**创建BGP邻居**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21437/154200595512050_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21437/154201679212050_zh-CN.png)
 
 5.  添加BGP邻居，然后单击**确定**。
 
@@ -74,7 +74,7 @@ BGP的使用限制如下：
 3.  选择一个地域，然后单击目标VBR的ID。
 4.  单击**宣告BGP网段**页签，然后单击**宣告BGP网段**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21437/154200595512051_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21437/154201679312051_zh-CN.png)
 
 5.  输入要宣告的网段，然后单击**确定**。
 
