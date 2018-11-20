@@ -2,14 +2,14 @@
 
 You can delete your Pay-As-You-Go instances, change their bandwidths, or change their billing method to Subscription.
 
-1.  登录[高速通道管理控制台](https://expressconnectnext.console.aliyun.com)。 
-2.  In the left navigation pane, click**VPC Peering Connections** \> **VPC-to-VPC** or **VPC Peering Connections** \> **VBR-to-VPC**. 
+1.  Log on to the [Express Connect](https://partners-intl.console.aliyun.com/#/ri) console. 
+2.  In the left-side navigation pane, click **VPC Peering Connections** \> **VPC-to-VPC** or **VPC Peering Connections** \> **VBR-to-VPC**. 
 3.  Select the region where your instance is located and find your target instance. 
-4.  Click ![](images/12053_en-US.png) and select the operations you want: 
-    -   **Initiate Connection**: After you establish a peering connection between different accounts and add the peer instance, you need to initiate a connection from the initiator. The connection can be initiated only from the initiator.
+4.  Click ![](images/12053_en-US.png) and select the operation you want to perform: 
+    -   **Initiate Connection**: When creating a peering connection between two different accounts, you must initiate the connection from the initiator after adding the peer instance. The connection can be initiated only from the initiator instance.
     -   **Upgrade/Downgrade**: Change the bandwidth of the initiator instance.
-    -   **Switch to Subscription**: Change the billing method of the initiator instance to Subscription.
-    -   **Suspend Initiator/Acceptor**: Suspend the activated instance. No data is forwarded after suspension.
-    -   **Activate Initiator/Acceptor**: Activate the suspended instance. Data forwarding will be restored after activation.
+    -   **Switch to Subscription**: Change the billing method of the initiator to Subscription.
+    -   **Suspend Initiator/Acceptor**: Suspend the activated instance. Data will no longer be forwarded after the suspension.
+    -   **Activate Initiator/Acceptor**: Activate the suspended instance. Data forwarding will be restored after the activation.
     -   **Delete**: Delete the unconnected or suspended instance.
 
