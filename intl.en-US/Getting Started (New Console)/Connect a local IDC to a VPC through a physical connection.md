@@ -6,7 +6,7 @@ This tutorial describes how to use Express Connect to implement intercommunicati
 
 This tutorial uses the VPC and local IDC configurations shown in the following figure.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/15427267694207_en-US.jpg)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/15434961854207_en-US.jpg)
 
 ## Prerequisites {#section_cs5_qhr_ydb .section}
 
@@ -14,7 +14,7 @@ You have submitted a ticket and obtained the geographic position of the access p
 
 ## Step 1: Apply for a physical connection interface and complete leased line access {#section_ds5_qhr_ydb .section}
 
-1.  Log on to the [Express Connect](https://expressconnectnext.console.aliyun.com) console.
+1.  Log on to the [Express Connect](https://partners-intl.console.aliyun.com/#/ri) console.
 2.  In the left-side navigation pane, click **Physical Connections** \> **Physical Connection Interfaces**.
 3.  Click **Apply for New Interface**.
 4.  Configure the interface. Perform the following configurations:
@@ -38,7 +38,7 @@ You have submitted a ticket and obtained the geographic position of the access p
 
     The physical connection interface status is **Applying**.
 
-6.  Alibaba Cloud will review your application. Normally, the review will be completed on the next workday. When the physical connection interface status becomes **Approved**, click **Pay for Connection** and complete the payment.
+6.  Wait for Alibaba Cloud to review your application. Normally, the review will be completed on the next workday. When the physical connection interface status becomes **Approved**, click **Pay for Connection** and complete the payment.
 
     The system automatically allocates you a port and a physical connection ID.
 
@@ -49,7 +49,7 @@ You have submitted a ticket and obtained the geographic position of the access p
 
     When the physical connection interface status changes to **Enabled**, the physical connection is completed.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/154272676911740_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/154349618511740_en-US.png)
 
 
 ## Step 2: Create a virtual border router {#section_js5_qhr_ydb .section}
@@ -58,7 +58,7 @@ After the physical connection is established, you need to create a Virtual Borde
 
 To create a VBR, perform the following steps:
 
-1.  Log on to the [Express Connect](https://expressconnectnext.console.aliyun.com) console.
+1.  Log on to the [Express Connect](https://partners-intl.console.aliyun.com/#/ri) console.
 2.  In the left-side navigation pane, click **Physical Connections** \> **Virtual Border Routers \(VBRs\)**.
 3.  Click **Create VBR**. In this example, configure the VBR as follows:
     -   **Account**: Select **Current Account**.
@@ -83,7 +83,7 @@ After the physical connection is established, you also need to establish a peeri
 
 To create a peering connection, perform the following steps:
 
-1.  Log on to the [Express Connect](https://expressconnectnext.console.aliyun.com) console.
+1.  Log on to the [Express Connect](https://partners-intl.console.aliyun.com/#/ri) console.
 2.  In the left-side navigation pane, click **VPC Peering Connections** \> **VBR-to-VPC**.
 3.  Click **Create Peering Connection**.
 4.  Configure the peering connection.
@@ -112,7 +112,7 @@ To create a peering connection, perform the following steps:
 5.  Click **Buy Now** and complete the payment.
 6.  Check the created peering connection. When the initiator and the acceptor are in **Activated** status, the peering connection is established successfully.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/154272676911742_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/154349618611742_en-US.png)
 
 
 ## Step 4: Configure VPC routing {#section_us5_qhr_ydb .section}
@@ -123,7 +123,7 @@ To forward the traffic destined for your local IDC \(11.11.11.0/24\) to the VBR,
 
 1.  On the VPCs page, locate the intercommunicated VPC, and then click the ID of the VPC.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/154272676911743_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/154349618611743_en-US.png)
 
 2.  In the Network Resources area, click the route table link.
 3.  On the Route Tables page, click the route table ID of the VPC, and then click **Add Route Entry**.
@@ -132,21 +132,21 @@ To forward the traffic destined for your local IDC \(11.11.11.0/24\) to the VBR,
     -   **Next Hop Type**: Select **Router Interface \(To VBR\)**.
     -   **General Routing**: Select the VBR associated with the physical connection.
 
-## Step 5: configure VBR routing {#section_sr1_v54_cfb .section}
+## Step 5: Configure VBR routing {#section_sr1_v54_cfb .section}
 
 To configure VBR routing destined for your local IDC and the VPC respectively, perform the following steps:
 
-1.  Log on to the [Express Connect](https://expressconnectnext.console.aliyun.com) console.
+1.  Log on to the [Express Connect](https://partners-intl.console.aliyun.com/#/ri) console.
 2.  In the left-side navigation pane, click **VBR-to-VPC**.
 3.  Locate the target VBR, and then click **Route Settings**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/154272676913168_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/154349618613168_en-US.png)
 
 4.  Click **Add Route Entry**.
 5.  In the displayed dialog box, enter the CIDR block of the VPC \(In this example, enter 192.168.0.0/16\), and then click **Confirm**.
 6.  Click **Route Settings** under the acceptor associated with the VBR instance.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/154272676911700_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/154349618611700_en-US.png)
 
 7.  Click **Add Route Entry**.
 8.  Enter the CIDR block of your local IDC \(In this example, enter 10.0.0.0/24\), and then click **Confirm**.
@@ -165,7 +165,7 @@ Now the route configuration for the Alibaba Cloud side is completed. On the phys
 
 -   Dynamic route
 
-    You can also forward data between your local IDC and the VBR by configuring BGP. For more information, see [Configure BGP](../intl.en-US/User Guide (New Console)/Virtual border router/Configure BGP.md#).
+    You can also forward data between your local IDC and the VBR by configuring BGP. For more information, see [Configure BGP](../reseller.en-US/User Guide (New Console)/Virtual border router/Configure BGP.md#).
 
 
 After the route configuration is completed, the intranet communication link between your local IDC and VPC \(local IDC→physical connection→VBR→VPC\) is established.
@@ -174,5 +174,5 @@ After the route configuration is completed, the intranet communication link betw
 
 ## Step 7: Test the connection {#section_kt5_qhr_ydb .section}
 
-Test the physical connection rate to ensure that it meets your specific service needs. For more information, see [Method for testing the network performance of the leased line](https://help.aliyun.com/document_detail/58625.html).
+After the VPC is connected to the local data center, test the speed of the leased lines to ensure that they can meet service needs.
 
