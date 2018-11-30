@@ -1,14 +1,12 @@
 # Terms {#concept_ybn_hxq_ydb .concept}
 
-|Term| Description|
-|:---|:-----------|
-|Express Connect| A data transmission channel powered by Alibaba Cloud infrastructure. It provides secure and reliable intranet-like connections between different networks, such as between VPCs, or between VPCs and on-premises IDCs.|
-|Virtual Private Cloud \(VPC\)|A customized private network established on Alibaba Cloud. VPCs are logically isolated from each other. You can create and manage instances, such as ECS, Server Load Balancer, and RDS instances, in a VPC.|
-|Physical connection|The abstraction of a physical line used to directly connect an on-premises IDC to Alibaba Cloud. Each line a customer uses to access Alibaba Cloud corresponds to a physical connection object.|
-|VRouter|The hub of a VPC, connecting all VSwitches in a VPC and serving as a gateway device that connects the VPC to other networks. It forwards network traffic according to route entries.|
-|Virtual border router \(VBR\)|You can create multiple virtual border routers on a physical connection. Each VBR is responsible for forwarding the data of a VLAN in Alibaba Cloud. With VBR, you can transmit your data directly to any region of Alibaba Cloud.|
-|Router interface \(RI\)|A router interface \(or VRouter interface\) is a virtual network device. It can be attached to a VRouter to create an Express Connect with another VRouter interface, delivering an intranet connection between different networks.|
-|Route table|A route table refers to a list of route entries on the VRouter.|
-|Route Entry| Each item in a route table is a route entry. It defines the next hop address of the network.|
-|Access point|The geographical location of the end, to which the physical leased line connects, on Alibaba Cloud. An access point belongs to a certain region and has two access devices. When a single region has multiple access points, any of these can be used to access Alibaba Cloud VPCs.|
+|Term|Description|
+|:---|:----------|
+|Express Connect|Alibaba Cloud Express Connect helps you build private-network communication channels between VPCs or between a VPC and your local IDC with increased network topology flexibility and enhanced cross-network communication quality and security.|
+|Virtual Private Cloud \(VPC\)|VPC is a custom private network created on Alibaba Cloud. VPCs are logically isolated from each other. You can create and manage your cloud product instances, such as ECS instances, SLB instances, and RDS instances, in your VPC.|
+|Physical connection interface|Physical interface through which the leased physical connection accesses an Alibaba Cloud access point.|
+|VRouter|A VRouter is a hub that connects all VSwitches in the VPC and serves as a gateway to connect the VPC with other networks.|
+|Virtual Border Router \(VBR\)|A VBR is a product mapping of the physical connection that you apply for to access a VSwitch. The VBR can be regarded as a router between your Customer-Premises Equipment \(CPE\) and the VPC, serving as a bridge for data exchange between your local IDC and the VPC.|
+|Peering connection|Private-network communication channel between two VPCs or between a VPC and a VBR.|
+|Access point|Geographical location where the physical connection accesses Alibaba Cloud. Each access point has two access devices. Each region has one or more access points, any of which can be used to access Alibaba Cloud VPCs.|
 
