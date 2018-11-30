@@ -5,7 +5,7 @@ You can delete your Pay-As-You-Go instances, change their bandwidths, or change 
 1.  Log on to the [Express Connect](https://partners-intl.console.aliyun.com/#/ri) console. 
 2.  In the left-side navigation pane, click **VPC Peering Connections** \> **VPC-to-VPC** or **VPC Peering Connections** \> **VBR-to-VPC**. 
 3.  Select the region where your instance is located and find your target instance. 
-4.  Click ![](images/12053_en-US.png) and select the operation you want to perform: 
+4.  Click ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21440/154355118412053_en-US.png) and select the operation you want to perform: 
     -   **Initiate Connection**: When creating a peering connection between two different accounts, you must initiate the connection from the initiator after adding the peer instance. The connection can be initiated only from the initiator instance.
     -   **Upgrade/Downgrade**: Change the bandwidth of the initiator instance.
     -   **Switch to Subscription**: Change the billing method of the initiator to Subscription.
