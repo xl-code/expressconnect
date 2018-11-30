@@ -6,7 +6,7 @@ Before you can delete a peering connection, you must first delete the route entr
 
 Perform the following steps to delete the custom route entries:
 
-1.  Log on to the [Express Connect](https://expressconnectnext.console.aliyun.com) console.
+1.  Log on to the [Express Connect](https://partners-intl.console.aliyun.com/#/ri) console.
 2.  In the left-side navigation pane, click **PVC Peering Connections** \> **VPC-to-VPC**.
 3.  Select a region and find your target peering connection.
 4.  Click the VPC ID of the initiator. On the VPC Details page, click the VPC ID again.
@@ -19,10 +19,10 @@ Perform the following steps to delete the custom route entries:
 
 Perform the following steps to delete the peering connection:
 
-1.  Log on to the [Express Connect](https://expressconnectnext.console.aliyun.com) console.
+1.  Log on to the [Express Connect](https://partners-intl.console.aliyun.com/#/ri) console.
 2.  In the left-side navigation pane, click **VPC Peering Connections** \> **VPC-to-VPC**.
 3.  Select a region and find your target peering connection.
-4.  Click **![](images/12053_en-US.png)** \> **Suspend Initiator**. In the displayed dialog box, click **Confirm**.
-5.  Click **![](images/12053_en-US.png)** \> **Suspend Acceptor**. In the displayed dialog box, click **Confirm**.
-6.  Click **![](images/12053_en-US.png)** \> **Delete**. In the displayed dialog box, click **Confirm**.
+4.  Click **![](images/12053_en-US_source.png)** \> **Suspend Initiator**. In the displayed dialog box, click **Confirm**.
+5.  Click **![](images/12053_en-US_source.png)** \> **Suspend Acceptor**. In the displayed dialog box, click **Confirm**.
+6.  Click **![](images/12053_en-US_source.png)** \> **Delete**. In the displayed dialog box, click **Confirm**.
 
