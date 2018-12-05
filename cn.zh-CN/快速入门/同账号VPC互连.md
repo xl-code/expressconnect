@@ -1,97 +1,102 @@
 # 同账号VPC互连 {#concept_wrx_vbr_ydb .concept}
 
-本教程指引您如何使用高速通道实现同账号的两个VPC互通。
+本教程指引您使用高速通道连接同一个账号下的两个VPC。
+
+**说明：** 
+
+-   如果您首次使用高速通道实现两个VPC互通，推荐您使用云企业网（CEN），详情参见[教程概览](../../../../../cn.zh-CN/快速入门/教程概览.md#)。
+-   同地域VPC互连，不支持预付费计费模式。
 
 ## 教程示例 {#section_ock_bcr_ydb .section}
 
 本操作以如下两个VPC为例演示如何使用高速通道实现VPC私网互通。
 
-|配置|VPC1|VPC2|
-|:-|:---|:---|
-|VPC ID|vpc-12345678|vpc-12345678|
-|地域|华北2（北京）|华东1（杭州）|
-|VPC网段|192.168.0.0/16|172.16.0.0/12|
-|交换机网段|192.168.100.0/24|172.16.100.0/24|
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/154398069111702_zh-CN.png)
 
 ## 前提条件 {#section_kdw_xbr_ydb .section}
 
 确保要进行互连的VPC或交换机的网段不冲突。
 
-## 步骤一 创建路由器接口 {#section_ldw_xbr_ydb .section}
+## 步骤一 创建对等连接 {#section_ldw_xbr_ydb .section}
 
-完成以下操作，创建路由器接口：
+完成以下操作，创建对等连接：
 
-1.  登录[高速通道管理控制台](https://vpc.console.aliyun.com/expressConnect#/connection/cn-beijing/list)。
-2.  在左侧导航栏，单击**专有网络连接** \> **路由器接口**。
-3.  在路由器接口页面右上角，单击**创建路由器接口**。
-4.  配置路由器接口，并完成支付。
+1.  登录[高速通道管理控制台](https://expressconnectnext.console.aliyun.com)。
+2.  在左侧导航栏，单击**专有网络对等连接** \> **VPC互连**。
+3.  选择一个地域。
+
+    本教程选择**华北1（青岛）**。
+
+4.  单击**创建对等连接**。
+
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/154398069111683_zh-CN.png)
+
+5.  配置对等连接。
 
     本操作使用如下配置：
 
+    **说明：** 如果您要通过高速通道连接中国大陆和境外（含香港）的专有网络，请选择中国联通跨境。跨境互通由中国联通运营。
+
     -   **连接场景**：选择**VPC互连**。
 
-    -   **创建路由器场景**：选择**同时创建两端**。系统会将选择的本端VPC设置为连接发起端，并自动连接接受端。
+    -   **创建路由器场景**：选择**同时创建两端**。
 
-    -   **地域**：选择本端VPC的所属地域，本操作中选择**华北2\(北京\)**。
+        系统会将选择的本端VPC设置为连接发起端，对端VPC设置为接受端，自动连接发起端接收端。
 
-    -   **本端VPC ID**：选择本端VPC即连接发起端，本操作中选择**VPC1**。
+    -   **地域**：选择本端VPC的所属地域，本操作选择**华北1 （青岛）**。
 
-    -   **对端地域**：选择对端要连接的VPC的所属地域，本操作中选择**华东1\(杭州\)**。
+    -   **本端VPC ID**：选择本端VPC即连接发起端，本操作选择**VPC1**。
 
-    -   **对端VPC ID**：选择对端要连接的VPC，本操作中选择**VPC2**。
+    -   **对端地域**：选择要连接的VPC的所属地域，本操作选择**华北2 （北京）**。
 
-    -   **规格**：选择发起端路由器接口的规格，本操作中选择**大型1档**。
+    -   **对端VPC ID**：选择要连接的VPC，本操作选择**VPC2**。
 
+    -   **带宽值**：选择专有网络互通的带宽，本操作选择**2Mb**。
 
-路由器接口创建成功后，系统会为两端的VPC路由器各创建一个路由器接口，并激活连接，如下图所示：
+6.  单击**立即购买**，并完成支付。
+7.  回到专有网络对等连接页面，查看已创建的对等连接。
 
--   发起端路由器接口
+    当发起端和接收端的状态都为已激活时，表示成功建立连接。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21767/154089944212716_zh-CN.png)
-
--   接受端路由器接口
-
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21767/154089944212717_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/154398069111684_zh-CN.png)
 
 
 ## 步骤二 配置路由 {#section_tdw_xbr_ydb .section}
 
-创建路由器接口后，完成以下操作为两端的VPC配置路由：
+建立对等连接后，您还需要分别为互连的VPC添加路由。
 
-1.  在路由器接口列表页面，找到目标路由器接口，然后单击**路由配置**。
+完成以下操作，配置路由：
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21767/154089944212718_zh-CN.png)
+1.  在专有网络对等连接页面，找到已创建的对等连接。
+2.  单击发起端实例下的**路由配置**选项。
 
-2.  在虚拟路由器列表页面，单击**添加路由**。
-3.  在弹出的对话框中，配置路由：
-    -   **目标网段**：输入对端进行通信的VPC或交换机的网段。
-    -   **下一跳类型**：选择**路由器接口**。
-    -   **路由器接口**：选择**普通路由**并选择路由器接口。
-4.  重复上述步骤，为另外一个路由器接口关联的VPC配置路由。
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/154398069111686_zh-CN.png)
 
-    本操作中的路由配置如下表所示。
+3.  单击**添加对端路由**，然后输入要连接的VPC或其交换机的网段，单击**确定**。
 
-    |目标网段|下一跳|说明|
-    |:---|:--|:-|
-    |172.16.100.0/24（VPC2的交换机网段）|VPC1的路由器接口|VPC1的路由表配置|
-    |192.168.100.0/24（VPC1的交换机网段）|VPC2的路由器接口|VPC2的路由表配置|
+    本操作输入对端VPC的网段172.16.0.0/16。
 
+4.  单击接收端实例下的**路由配置**选项。
+
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/154398069111700_zh-CN.png)
+
+5.  单击**添加对端路由**，然后输入要连接的VPC或其交换机的网段，单击**确定**。
 
 ## 步骤三 配置安全组 {#section_zx1_ndf_hfb .section}
 
-在两个VPC间建立对等连接后，可以通过跨账号授权的方式配置安全组规则，实现两个VPC内的ECS实例间的访问控制。
+在两个VPC间建立对等连接后，您还需要配置安全组规则，实现两个VPC内的ECS实例的互通。
 
 本操作以下表中的ECS实例和安全组配置为例。
 
 |配置信息|账号A|账号A|
 |:---|:--|:--|
 |账号ID|AccountID\_A|AccountID\_A|
-|ECS实例例ID|InstanceID\_A|InstanceID\_B|
+|ECS实例ID|InstanceID\_A|InstanceID\_B|
 |安全组ID|SecurityGroupID\_A|SecurityGroupID\_B|
 
 您可以在[账号中心](https://account.console.aliyun.com/?spm=5176.2020520001.aliyun_topbar.39.4cb94bd3LoJmJ3#/secure)查看账号ID。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21767/154089944213076_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/154398069113186_zh-CN.png)
 
 完成以下操作，配置安全组规则：
 
@@ -108,4 +113,8 @@
 
     本操作中选择IP地址段访问方式。
 
+
+## 步骤四 测试 {#section_hj4_55m_cfb .section}
+
+建立对等连接，并添加路由后，您可以登录到其中一个专有网络的ECS实例上，ping已连接的专有网络中的ECS实例的私网IP。如果可以ping通，则表示两个VPC已经成功连接。
 
