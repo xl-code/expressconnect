@@ -6,7 +6,7 @@ This tutorial describes how to use Express Connect to implement intercommunicati
 
 This tutorial uses the VPC and local IDC configurations shown in the following figure.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/15434961854207_en-US.jpg)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/15474568334207_en-US.jpg)
 
 ## Prerequisites {#section_cs5_qhr_ydb .section}
 
@@ -49,7 +49,7 @@ You have submitted a ticket and obtained the geographic position of the access p
 
     When the physical connection interface status changes to **Enabled**, the physical connection is completed.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/154349618511740_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/154745683411740_en-US.png)
 
 
 ## Step 2: Create a virtual border router {#section_js5_qhr_ydb .section}
@@ -112,7 +112,7 @@ To create a peering connection, perform the following steps:
 5.  Click **Buy Now** and complete the payment.
 6.  Check the created peering connection. When the initiator and the acceptor are in **Activated** status, the peering connection is established successfully.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/154349618611742_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/154745683411742_en-US.png)
 
 
 ## Step 4: Configure VPC routing {#section_us5_qhr_ydb .section}
@@ -123,7 +123,7 @@ To forward the traffic destined for your local IDC \(11.11.11.0/24\) to the VBR,
 
 1.  On the VPCs page, locate the intercommunicated VPC, and then click the ID of the VPC.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/154349618611743_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/154745683411743_en-US.png)
 
 2.  In the Network Resources area, click the route table link.
 3.  On the Route Tables page, click the route table ID of the VPC, and then click **Add Route Entry**.
@@ -140,16 +140,12 @@ To configure VBR routing destined for your local IDC and the VPC respectively, p
 2.  In the left-side navigation pane, click **VBR-to-VPC**.
 3.  Locate the target VBR, and then click **Route Settings**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/154349618613168_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13831/154745683413168_en-US.png)
 
 4.  Click **Add Route Entry**.
 5.  In the displayed dialog box, enter the CIDR block of the VPC \(In this example, enter 192.168.0.0/16\), and then click **Confirm**.
-6.  Click **Route Settings** under the acceptor associated with the VBR instance.
-
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/154349618611700_en-US.png)
-
-7.  Click **Add Route Entry**.
-8.  Enter the CIDR block of your local IDC \(In this example, enter 10.0.0.0/24\), and then click **Confirm**.
+6.  Click **Add Route Entry** again.
+7.  Enter the CIDR block of your local IDC \(In this example, enter 10.0.0.0/24\), and then click **Confirm**.
 
 ## Step 6: Configure routing for your local IDC {#section_mwr_x54_cfb .section}
 
