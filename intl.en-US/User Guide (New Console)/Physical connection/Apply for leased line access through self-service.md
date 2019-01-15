@@ -7,7 +7,7 @@ Before applying for leased line access, pay attention to the following restricti
 -   Physical connections do not support interfaces of SDH 155M CPOS, V.35 or G.703.
 -   Alibaba Cloud provides one or more access points in each accessible region. Different access points have different service provider restrictions. Before applying for leased line access, you must submit a ticket to obtain an access point and the restriction information of your service provider.
 
-1.  Log on to the [Express Connect](https://expressconnectnext.console.aliyun.com) console. 
+1.  Log on to the [Express Connect](https://partners-intl.console.aliyun.com/#/ri) console. 
 2.  In the left-side navigation pane, click **Physical Connections** \> **Physical Connection Interfaces**. 
 3.  Click **Apply for New Interface**. 
 4.  Set the parameters, and then click **OK**. 
@@ -44,6 +44,6 @@ Before applying for leased line access, pay attention to the following restricti
 12. Wait for the service provider to complete the construction. After the service provider completes the construction in the Alibaba Cloud IDC, the physical connection interface status becomes **Pending Confirmation**.
 13. After your service provider notifies you that the physical connection is deployed, find the physical connection in the console and click **Confirm**. After confirmation, the physical connection interface status changes to **Enabled**, indicating that the leased line access is completed.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21425/154277930712047_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21425/154752583412047_en-US.png)
 
 
