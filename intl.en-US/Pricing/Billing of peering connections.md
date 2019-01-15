@@ -1,21 +1,17 @@
 # Billing of peering connections {#concept_ekt_hyq_ydb .concept}
 
-The billing method of peering connections is Subscription.
+In the process of peering connection, Alibaba Cloud charges for the initiator instance but does not charge for the acceptor instance.
 
-## Billing method {#section_op1_jyq_ydb .section}
+## Billing methods {#section_op1_jyq_ydb .section}
 
 |Billing method|Description|Upgrade or downgrade|Overdue payment instruction|
 |:-------------|:----------|:-------------------|:--------------------------|
-|Subscription|Monthly or yearly subscription with the billing unit of USD/month| Real-time upgrades are supported.
-
- Temporary upgrades are supported.
+|Subscription|Subscription on a monthly basis and the billing unit is USD/month.| Temporary upgrades are supported.
 
  Upgrades or downgrades are supported after subscription renewal.
 
- Real-time downgrade is not supported
-
  | -   When the initiator instance is overdue for more than 24 hours, it will stop forwarding data and be locked.
--   If you recharge your account within 24 hours after the bill is overdue, your configuration will not be affected.
+-   If you renew your account within 24 hours after the bill is overdue, your configuration will not be affected.
 -   After your account is settled, the initiator instance will immediately restart data forwarding and be unlocked.
 -   If the initiator instance is overdue and locked for more than 15 days, it will be reclaimed. The configuration will be cleared and cannot be restored.
 
@@ -27,7 +23,7 @@ In the process of peering connection, Alibaba Cloud charges for the initiator in
 
 -   Cross-region interconnections are charged according to the prices shown on the purchase page. If you have any problem, contact your customer manager.
 
-**Note:** Before December 31, 2020, VPC interconnection between North China 2 \(Beijing\) and North China 3 \(Zhangjiakou\) is free.
+**Note:** Peering connections between the China \(Beijing\) region and the China \(Zhangjiakou\) region with bandwidth less than 2 Gb are free of charge before December 31, 2020.
 
 -   Same-region interconnections are charged according to the price listed in the following table. This fee will not be charged until December 31, 2020.
 
