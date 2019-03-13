@@ -34,7 +34,7 @@ No. Currently, Alibaba Cloud only supports Layer-3 interconnection.
 
 ## If a physical connection is connected to multiple VPCs, are the networks of the VPCs over the physical connection isolated from one another? {#section_qqs_bqb_12b .section}
 
-You can isolate network data by dividing VLANs on the physical connection. For more information, see [Create a virtual border router](../../../../reseller.en-US/User Guide (New Console)/Virtual border router/Create a virtual border router.md#).
+You can isolate network data by dividing VLANs on the physical connection. For more information, see [Create a virtual border router](../../../../../intl.en-US/User Guide (New Console)/Virtual border router/Create a virtual border router.md#).
 
 ## Does physical connection support NAT? {#section_rqs_bqb_12b .section}
 
@@ -110,7 +110,7 @@ After completing survey, the service provider will provide you a file containing
 
 ## How to verify that the leased line access is completed? {#section_grs_bqb_12b .section}
 
-After the construction is completed, after sales personnel of Alibaba Cloud changes the leased line status to **Awaiting Confirmation**. Log on to the Express Connect console, click **Physical Connection \> Leased Line** in the left-side navigation pane, and click **Confirm**. If the leased line status changes to **Normal**, the leased line access is completed. Then you need to create a VBR and configure routes to achieve leased line communication. For more information, see [Connect a local IDC to a VPC through a physical connection](../../../../reseller.en-US/Getting Started (New Console)/Connect a local IDC to a VPC through a physical connection.md#).
+After the construction is completed, after sales personnel of Alibaba Cloud changes the leased line status to **Awaiting Confirmation**. Log on to the Express Connect console, click **Physical Connection \> Leased Line** in the left-side navigation pane, and click **Confirm**. If the leased line status changes to **Normal**, the leased line access is completed. Then you need to create a VBR and configure routes to achieve leased line communication. For more information, see [Connect a local IDC to a VPC through a physical connection](../../../../../intl.en-US/Getting Started (New Console)/Connect a local IDC to a VPC through a physical connection.md#).
 
 ## How does the local data center access the OSS intranet domain name in the VPC? {#section_hrs_bqb_12b .section}
 
