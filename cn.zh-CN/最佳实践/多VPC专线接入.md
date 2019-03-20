@@ -10,7 +10,7 @@
 
 由于账号A已经购买了专线并将本地IDC接入到阿里云的接入点上，所以子公司账号B可以复用这根专线，将其账号下的VPC和本地数据中心连接起来。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13863/15476457444227_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13863/15530565384227_zh-CN.png)
 
 本教程中的VPC配置和专线配置如下：
 
@@ -62,9 +62,9 @@
 
 ## 前提条件 {#section_d34_x3r_ggb .section}
 
-本地IDC已经和账号A的VPC-A通过物理专线建立连接，详情参考[物理专线接入](../../../../../cn.zh-CN/快速入门/物理专线接入.md#)。
+本地IDC已经和账号A的VPC-A通过物理专线建立连接，详情参考[物理专线接入](../../../../../intl.zh-CN/快速入门/物理专线接入.md#)。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13863/154764574435360_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13863/155305653835360_zh-CN.png)
 
 ## 步骤一：创建连接发起端 {#section_gxd_jsr_ggb .section}
 
@@ -74,7 +74,7 @@
 2.  在左侧导航栏，选择**专有网络对等连接** \> **VBR上连**，然后单击**创建对等连接**。
 3.  配置对等连接。
 
-    本操作中的配置如下，详细配置说明，请参考[VBR上联](../../../../../cn.zh-CN/用户指南/对等连接/VBR上联.md#)。
+    本操作中的配置如下，详细配置说明，请参考[VBR上联](../../../../../intl.zh-CN/用户指南/对等连接/VBR上联.md#)。
 
     -   **账号类型**：选择**跨账号**。
     -   **连接场景**：选择**VBR上连**。
@@ -83,8 +83,8 @@
     -   **接入点**：选择VBR连接的物理专线所属的接入点。
     -   **本端VBR ID**：选择已创建的VBR 。
     -   **对端地域**：选择要连接的VPC的所属地域。本操作选择**华东1（杭州）**。
-    -   **带宽值**：选择私网互通的带宽。本操作选择**2Mb**。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13863/15476457444230_zh-CN.png)
-4.  查看已创建的发起端，并记录发起端路由器接口ID。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13863/154764574437535_zh-CN.png)
+    -   **带宽值**：选择私网互通的带宽。本操作选择**2Mb**。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13863/15530565384230_zh-CN.png)
+4.  查看已创建的发起端，并记录发起端路由器接口ID。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13863/155305653837535_zh-CN.png)
 
 ## 步骤二：创建接收端 {#section_lpm_wl5_ydb .section}
 
@@ -96,7 +96,7 @@
 2.  在左侧导航栏，选择**专有网络对等连接** \> **VBR上连**，然后单击**创建对等连接**。
 3.  配置对等连接。
 
-    本操作中的配置如下，详细配置说明，请参考[VBR上联](../../../../../cn.zh-CN/用户指南/对等连接/VBR上联.md#)。
+    本操作中的配置如下，详细配置说明，请参考[VBR上联](../../../../../intl.zh-CN/用户指南/对等连接/VBR上联.md#)。
 
     -   **账号类型**：选择**跨账号**。
     -   **连接场景**：选择**VBR上连**。
@@ -104,10 +104,10 @@
     -   **地域**：选择要连接的VPC地域。本操作选择**华东1（杭州）**。
     -   **本端VPC ID**：选择要连接的VPC。本操作选择VPC-B。
     -   **对端地域**：选择已创建的VBR的所属地域。本操作选择**华北2（北京）**。
-    -   **对端接入点**：选择VBR连接的物理专线的所属接入点。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13863/154764574535392_zh-CN.png)
+    -   **对端接入点**：选择VBR连接的物理专线的所属接入点。![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13863/155305653835392_zh-CN.png)
 4.  查看已创建的接收端，并记录接收端路由器接口ID。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13863/154764574537534_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13863/155305653837534_zh-CN.png)
 
 
 ## 步骤三：添加接收端和发起端，建立对等连接 {#section_ij3_fpb_mgb .section}
@@ -128,11 +128,11 @@
     1.  **账号类型**：选择**跨账号**。
     2.  **发起端路由器接口**：输入已创建的接收端路由器接口ID，比如ri-1234567。
     3.  单击**确定**。
-9.  单击发起端实例操作列下的![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13863/154764574537536_zh-CN.png)图标，然后单击**发起连接**。
+9.  单击发起端实例操作列下的![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13863/155305653837536_zh-CN.png)图标，然后单击**发起连接**。
 
     当接收端和发起端状态都变为已激活时，表示连接成功。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13863/154764574435360_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13863/155305653835360_zh-CN.png)
 
 
 ## 步骤四：配置路由 {#section_f4d_z45_ydb .section}
@@ -177,5 +177,5 @@ ip route 192.168.0.0/16 10.100.0.1
 
 ## 步骤五：验收测试 {#section_njh_gr5_ydb .section}
 
-网络互通后，请测试物理专线速率，确保满足业务需求。详细测速方法请参考[物理专线网络性能测试](cn.zh-CN/最佳实践/物理专线网络性能测试方法.md#)。
+网络互通后，请测试物理专线速率，确保满足业务需求。详细测速方法请参考[物理专线网络性能测试](intl.zh-CN/最佳实践/物理专线网络性能测试方法.md#)。
 
