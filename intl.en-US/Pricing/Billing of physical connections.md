@@ -1,73 +1,72 @@
 # Billing of physical connections {#concept_ekt_hyq_ydb .concept}
 
-The billing method of physical connections is Subscription.
+The billing of physical connections involves fees charged by Alibaba Cloud and third parties.
 
 ## Billing method {#section_op1_jyq_ydb .section}
 
-|Billing method|Descriptions|Upgrade or downgrade|Overdue instruction|
-|:-------------|:-----------|:-------------------|:------------------|
-|Subscription|Monthly or yearly subscription|Not supported| -   When a leased line interface is overdue and the overdue bill exceeds 24 hours, the leased line interface stops data forwarding and is locked.
--   If you recharge your account within 24 hours after the bill is overdue, your configuration will not be affected.
--   When your account is settled, the leased line interface will immediately restart data forwarding and is unlocked.
--   If the leased line interface is locked over 15 days, the leased line interface will be reclaimed, the configuration will be cleaned and it cannot be recovered.
+|Billing method|Description|Upgrade or downgrade|Overdue payment process|
+|:-------------|:----------|:-------------------|:----------------------|
+|Subscription|Monthly or yearly subscription with the billing unit of USD/month|Not supported|You will be notified about payment for a physical connection 15 days, 7 days, 3 days, and 1 day before the payment is due. If the payment for a physical connection is not settled, the physical connection expires. During the first 15 days after expiration, the physical connection is stopped.**Note:** If a physical connection is stopped, the corresponding devices, resources, and configurations associated with the physical connection are reserved \(that is, the resources are not released\).
 
- |
+|
 
-## Billing {#section_c2z_dss_2fb .section}
+## Billing items {#section_c2z_dss_2fb .section}
 
 The physical connection service involves Alibaba Cloud fees and third-party fees.
 
--   Fees charged by Alibaba Cloud
+-   Alibaba Cloud fees
 
-    The leased line interface fee is charged by Alibaba Cloud, including the first-time installation fee and outbound traffic fee.
+    The fee for a physical connection is charged by Alibaba Cloud and includes an initial installation fee, resource occupation fee, and outbound traffic fee.
 
--   Fees charged by third parties
+    -   If you access Alibaba Cloud through a dedicated port, you need to pay a one-time initial installation fee for the physical connection. The resource occupation fee is charged on a monthly basis.
+    -   If you access Alibaba Cloud through an NNI partner with a shared port, you only need to pay for the outbound traffic fee, which is charged on a monthly basis.
+-   Third-party fees
 
-    The fees of third parties \(service providers, partners, data center operators, and so on\) include lease fees for leased lines and cable rental fees. For specific details, please consult with the relevant operator.
+    The fees charged by third parties \(telecom operators, partners, and data center operators\) include the leased-line fee and indoor cable rental fee. For more information, consult the third party.
 
 
-## Pricing of dedicated access port {#section_acg_bcc_p2b .section}
+## Pricing of dedicated access ports {#section_acg_bcc_p2b .section}
 
-The fees of a dedicated access port include [Table 1](#table_p1x_rst_gfb) and [Table 2](#table_awd_lmt_gfb).
+Dedicated access port fees include an initial installation fee and a resource occupation fee, as shown in the following two tables.
 
-|Specification|Price \(USD\)|
-|:------------|:------------|
-|1G|1,500|
+|Interface specification|Price \(USD\)|
+|:----------------------|:------------|
+|1G and below|1,500|
 |10G|1,500|
 |40G|1,500|
 |100G|1,500|
 
-|Billing item|Interface specification|Subscription \(USD/month\)|
+|Charged item|Interface specification|Subscription \(USD/month\)|
 |:-----------|:----------------------|--------------------------|
-|Resource occupation fee \(Mainland China\)|1G|85|
+|Resource occupation fee \(Mainland China\)|1G and below|85|
 |10G|720|
 |40G|2,450|
 |100G|5,200|
-|Resource occupation fee \(Oversea\)|1G|290|
-|10G|2,640|
-|40G|9,920|
-|100G|23,430|
+|Resource occupation fee \(Outside Mainland China\)|1G and below|210|
+|10G|1,600|
+|40G|5,500|
+|100G|11,700|
 
-**Note:** No resource occupation fee will be charged until January 1, 2019.
+**Note:** Billing for the resource occupation fee starts April 1, 2019.
 
-## Pricing of shared access ports {#section_p24_mlt_gfb .section}
+## Pricing of shared access ports by partners {#section_p24_mlt_gfb .section}
 
-**Note:** No traffic charges will be charged for the period before April 1, 2019.
-
-|Billing item|Price|
+|Charged item|Price|
 |:-----------|:----|
 |Outbound traffic fee|0.015 USD/GB|
 
-## Fees not charged by Alibaba Cloud {#section_prn_fkt_gfb .section}
+**Note:** No outbound traffic fee is charged before October 1, 2019.
 
-Third-party fees include lease fees for leased lines and cable rental fees in buildings. For specific details, please consult with the relevant operator.
+## Third-party fees {#section_prn_fkt_gfb .section}
 
-|Billing item|Descriptions|
-|:-----------|:-----------|
-|Leased line rental fee|Charged by service providers or partners. The rental fee is charged according to the bandwidth and distance.|
-|In-house cable leasing fee| Charged by service providers or partners.
+Third-party fees include the leased-line fee and indoor cable rental fee. For more information, consult the third party.
 
- For specific details, please consult with the relevant operator.
+|Charged item|Description|
+|:-----------|:----------|
+|Leased-line fee|Charged by telecom operators or partners. The lease fee depends on the bandwidth and distance.|
+|Indoor cable rental fee| Charged by IDC operators or partners.
+
+ For more information, consult the third party.
 
  |
 
