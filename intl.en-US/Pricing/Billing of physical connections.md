@@ -6,9 +6,9 @@ The billing of physical connections involves fees charged by Alibaba Cloud and t
 
 |Billing method|Description|Upgrade or downgrade|Overdue payment process|
 |:-------------|:----------|:-------------------|:----------------------|
-|Subscription|Monthly or yearly subscription with the billing unit of USD/month|Not supported|You will be notified about payment for a physical connection 15 days, 7 days, 3 days, and 1 day before the payment is due. If the payment for a physical connection is not settled, the physical connection expires. During the first 15 days after expiration, the physical connection is stopped.**Note:** If a physical connection is stopped, the corresponding devices, resources, and configurations associated with the physical connection are reserved \(that is, the resources are not released\).
+|Subscription|Monthly or yearly subscription with the billing unit of USD/month|Not supported|You will be notified about payment for a physical connection 15 days, 7 days, 3 days, and 1 day before the payment is due. If the payment for a physical connection is not settled, the physical connection expires. During the first 15 days after expiration, the physical connection is stopped. **Note:** Within the one month after a physical connection is stopped, the corresponding devices, resources, and configurations associated with the physical connection are reserved \(that is, the resources are not released\).
 
-|
+ |
 
 ## Billing items {#section_c2z_dss_2fb .section}
 
