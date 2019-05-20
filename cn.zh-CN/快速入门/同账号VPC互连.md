@@ -4,14 +4,13 @@
 
 **说明：** 
 
--   如果您首次使用高速通道实现两个VPC互通，推荐您使用云企业网（CEN），详情参见[教程概览](../../../../../cn.zh-CN/快速入门/教程概览.md#)。
--   同地域VPC互连，不支持预付费计费模式。
+-   如果您首次使用高速通道实现两个VPC互通，推荐您使用云企业网（CEN），详情参见[教程概览](../../../../../intl.zh-CN/快速入门/教程概览.md#)。
 
 ## 教程示例 {#section_ock_bcr_ydb .section}
 
 本操作以如下两个VPC为例演示如何使用高速通道实现VPC私网互通。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/154398069111702_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/155832263811702_zh-CN.png)
 
 ## 前提条件 {#section_kdw_xbr_ydb .section}
 
@@ -29,13 +28,11 @@
 
 4.  单击**创建对等连接**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/154398069111683_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/155832263911683_zh-CN.png)
 
 5.  配置对等连接。
 
     本操作使用如下配置：
-
-    **说明：** 如果您要通过高速通道连接中国大陆和境外（含香港）的专有网络，请选择中国联通跨境。跨境互通由中国联通运营。
 
     -   **连接场景**：选择**VPC互连**。
 
@@ -58,7 +55,7 @@
 
     当发起端和接收端的状态都为已激活时，表示成功建立连接。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/154398069111684_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/155832263911684_zh-CN.png)
 
 
 ## 步骤二 配置路由 {#section_tdw_xbr_ydb .section}
@@ -70,7 +67,7 @@
 1.  在专有网络对等连接页面，找到已创建的对等连接。
 2.  单击发起端实例下的**路由配置**选项。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/154398069111686_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/155832263911686_zh-CN.png)
 
 3.  单击**添加对端路由**，然后输入要连接的VPC或其交换机的网段，单击**确定**。
 
@@ -78,7 +75,7 @@
 
 4.  单击接收端实例下的**路由配置**选项。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/154398069111700_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/155832263911700_zh-CN.png)
 
 5.  单击**添加对端路由**，然后输入要连接的VPC或其交换机的网段，单击**确定**。
 
@@ -96,7 +93,7 @@
 
 您可以在[账号中心](https://account.console.aliyun.com/?spm=5176.2020520001.aliyun_topbar.39.4cb94bd3LoJmJ3#/secure)查看账号ID。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/154398069113186_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/155832263913186_zh-CN.png)
 
 完成以下操作，配置安全组规则：
 
