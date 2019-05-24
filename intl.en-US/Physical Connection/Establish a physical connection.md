@@ -6,11 +6,11 @@ This topic describes the methods you can use to access Alibaba Cloud through Exp
 
 You can connect to Alibaba Cloud through Express Cloud Connect and an Internet connection, as shown in the following figure.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83738/155729813745512_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83738/155867648845512_en-US.png)
 
 ## Apply for a physical line {#section_ttl_3dt_ggb .section}
 
-You can apply for a physical line from your telecom carrier or carriers, and connect your on-premises data center to an Alibaba Cloud access point through this physical line. This physical connection method needs to occupy a physical port of Alibaba Cloud. The following figure shows the overall connection process.![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83738/155729813735446_en-US.png)
+You can apply for a physical line from your telecom carrier or carriers, and connect your on-premises data center to an Alibaba Cloud access point through this physical line. This physical connection method needs to occupy a physical port of Alibaba Cloud. The following figure shows the overall connection process.![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83738/155867648835446_en-US.png)
 
 ## Differences between the two physical connection methods {#section_hwq_hft_ggb .section}
 
