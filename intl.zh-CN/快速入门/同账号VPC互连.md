@@ -10,7 +10,7 @@
 
 本操作以如下两个VPC为例演示如何使用高速通道实现VPC私网互通。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/156013530211702_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/156013542911702_zh-CN.png)
 
 ## 前提条件 {#section_kdw_xbr_ydb .section}
 
@@ -28,7 +28,7 @@
 
 4.  单击**创建对等连接**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/156013530211683_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/156013542911683_zh-CN.png)
 
 5.  配置对等连接。
 
@@ -56,7 +56,7 @@
 
     当发起端和接收端的状态都为已激活时，表示成功建立连接。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/156013530211684_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/156013543011684_zh-CN.png)
 
 
 ## 步骤二 配置路由 {#section_tdw_xbr_ydb .section}
@@ -68,7 +68,7 @@
 1.  在专有网络对等连接页面，找到已创建的对等连接。
 2.  单击发起端实例下的**路由配置**选项。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/156013530211686_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/156013543011686_zh-CN.png)
 
 3.  单击**添加对端路由**，然后输入要连接的VPC或其交换机的网段，单击**确定**。
 
@@ -76,7 +76,7 @@
 
 4.  单击接收端实例下的**路由配置**选项。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/156013530211700_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/156013543011700_zh-CN.png)
 
 5.  单击**添加对端路由**，然后输入要连接的VPC或其交换机的网段，单击**确定**。
 
@@ -94,7 +94,7 @@
 
 您可以在[账号中心](https://account.console.aliyun.com/?spm=5176.2020520001.aliyun_topbar.39.4cb94bd3LoJmJ3#/secure)查看账号ID。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/156013530213186_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/156013543013186_zh-CN.png)
 
 完成以下操作，配置安全组规则：
 
