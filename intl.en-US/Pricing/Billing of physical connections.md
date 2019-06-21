@@ -6,7 +6,12 @@ The billing of physical connections involves fees charged by Alibaba Cloud and t
 
 |Billing method|Description|Upgrade or downgrade|Overdue payment process|
 |:-------------|:----------|:-------------------|:----------------------|
-|Subscription|Monthly or yearly subscription with the billing unit of USD/month|Not supported|You will be notified about payment for a physical connection 15 days, 7 days, 3 days, and 1 day before the payment is due. If the payment for a physical connection is not settled, the physical connection expires. During the first 15 days after expiration, the physical connection is stopped. **Note:** Within the one month after a physical connection is stopped, the corresponding devices, resources, and configurations associated with the physical connection are reserved \(that is, the resources are not released\).
+|Subscription|Monthly or yearly subscription with the billing unit of USD/month| Not supported
+
+ | -   You will be notified about payment for a physical connection 15 days, 7 days, 3 days, and 1 day before the payment is due.
+-   If the payment for a physical connection is not settled within 15 days after the physical connection expires, the physical connection is stopped.
+
+ **Note:** Within the one month after a physical connection is stopped, the corresponding devices, resources, and configurations associated with the physical connection are reserved \(that is, the resources are not released\).
 
  |
 
@@ -19,15 +24,15 @@ The physical connection service involves Alibaba Cloud fees and third-party fees
     The fee for a physical connection is charged by Alibaba Cloud and includes an initial installation fee, resource occupation fee, and outbound traffic fee.
 
     -   If you access Alibaba Cloud through a dedicated port, you need to pay a one-time initial installation fee for the physical connection. The resource occupation fee is charged on a monthly basis.
-    -   If you access Alibaba Cloud through an NNI partner with a shared port, you only need to pay for the outbound traffic fee, which is charged on a monthly basis.
+    -   If you access Alibaba Cloud through an NSP partner with a shared port, you only need to pay for the outbound traffic fee, which is charged on a monthly basis.
 -   Third-party fees
 
-    The fees charged by third parties \(telecom operators, partners, and data center operators\) include the leased-line fee and indoor cable rental fee. For more information, consult the third party.
+    The fees charged by third parties \(telecom operators, partners, and data center operators\) include the **leased-line fee** and **indoor cable rental fee**. For more information, consult the third party.
 
 
 ## Pricing of dedicated access ports {#section_acg_bcc_p2b .section}
 
-Dedicated access port fees include an initial installation fee and a resource occupation fee, as shown in the following two tables.
+Dedicated access port fees include [Table 1](#table_p1x_rst_gfb) and [Table 2](#table_awd_lmt_gfb).
 
 |Interface specification|Price \(USD\)|
 |:----------------------|:------------|
@@ -59,7 +64,7 @@ Dedicated access port fees include an initial installation fee and a resource oc
 
 ## Third-party fees {#section_prn_fkt_gfb .section}
 
-Third-party fees include the leased-line fee and indoor cable rental fee. For more information, consult the third party.
+Third-party fees include the leased-line fee and indoor cable rental fee. For more information, contact the third party.
 
 |Charged item|Description|
 |:-----------|:----------|
