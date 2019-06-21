@@ -1,10 +1,10 @@
 # Billing of Express Cloud Connect instances {#concept_188706 .concept}
 
-The billing of Express Cloud Connect instances involves fees charged by Alibaba Cloud and third parties.
+The billing of Express Cloud Connect \(ECC\) instances involves fees charged by Alibaba Cloud and third parties.
 
 ## Billing method {#section_jd0_qpw_e4l .section}
 
-Express Cloud Connect instances are charged using the Subscription-billing method. The minimum billing period of a Subscription is six months.
+ECC instances are charged using the Subscription-billing method. The minimum billing period of a Subscription is six months.
 
 If you need to change the billing method, you can open a ticket.
 
@@ -20,7 +20,7 @@ If you need to change the billing method, you can open a ticket.
 
 ## Expiration reminder and overdue payment {#section_nii_l43_8n1 .section}
 
--   You will receive notifications of instances that are approaching expiration 15 days, 7 days, and 1 day before they expire.
+-   You will receive notifications of instances that are approaching expiration 15 days, 7 days, 3 days, and 1 day before they expire.
 -   If you do not renew your instances within 15 days after the instances expire, they are stopped and then released. Related resources and configurations are also cleared.
 
 ​​
