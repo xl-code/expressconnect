@@ -8,11 +8,11 @@ Alibaba Cloud sends a ping packet to the customer-side IP address of the on-prem
 
 **Note:** If Control Plane Policing \(Copp\) \(such as Cisco devices\) or Local Attack Defense Policy \(Huawei devices\) is configured on the on-premises data center, health check packets may be discarded and then the health check link shocks. We recommend that you cancel the control side speed limitation on the network device of the on-premises data center.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/62556/155849235431622_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/62556/156112938231622_en-US.png)
 
-1.  Log on to the [Express Connect](https://partners-intl.console.aliyun.com/#/ri) console. 
+1.  Log on to the [Express Connect](https://expressconnectnext.console.aliyun.com) console. 
 2.  In the left-side navigation pane, choose **VPC Peering Connections** \> **VBR-to-VPC**.
-3.  Locate the target peering connection and click **![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21440/155849235412053_en-US.png)** \> **Health Check**.
+3.  Locate the target peering connection and click **![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21440/156112938212053_en-US.png)** \> **Health Check**.
 4.  Click **Configure** and then configure the health check based on the following information. 
 
     |Configuration|Description|
