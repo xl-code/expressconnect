@@ -2,7 +2,7 @@
 
 Alibaba Cloud Express Connect helps you build private network communication channels between VPCs or between a VPC and your on-premises data center. These channels feature increased network topology flexibility and enhanced cross-network communication quality and security. Express Connect also helps you mitigate unstable network latency and data breaches.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13811/15580809214200_en-US.jpg)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13811/15613586074200_en-US.jpg)
 
 ## Features {#section_v5t_z12_bfb .section}
 
@@ -35,7 +35,7 @@ The benefits of Express Connect are as follows:
 
     Built on the state-of-the-art infrastructure of Alibaba Cloud, Express Connect ensures stable and reliable communication between networks.
 
--   Security
+-   Security 
 
     Express Connect implements cross-network communication at the network virtualization layer, where all data is transmitted through the infrastructure of Alibaba Cloud and tenants are isolated from each other.
 
