@@ -10,8 +10,8 @@ You can query the number of remaining resources in your quota through the Expres
     -   **Quantity for Application**: the number of resources you require. You must enter a number that is greater than the current quota. For more information about the resource limits of Express Connect, see [Limits](../reseller.en-US/Product Introduction/Limits.md#).
     -   **Reason for Application**: your reason for applying for an increase to your quota. We recommend that you include details about your specific scenario.
     -   **Email**: the email address of the person to contact.
-5.  Click **OK**. The system then determines whether the quota application is reasonable. If the system determines the request is unreasonable, the application enters the **Rejected** state. If the application is reasonable, the application enters the **Approved** state and the quota is automatically upgraded to the specified quota number.
+5.  Click **OK**. The system automatically determines whether the quota application is reasonable. If it is unreasonable, the application enters a **Rejected** state, and if it is reasonable, **Approved**. If the application is approved, the quota is automatically upgraded to the applied number.
 
-    To view a history of quota applications, click **Application History** in the **Application History** column.
+    To view the quota application history, click **Application History** in the **Application History** column.
 
 
