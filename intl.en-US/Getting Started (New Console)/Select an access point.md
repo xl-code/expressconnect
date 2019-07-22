@@ -14,7 +14,7 @@ When you select an access point, you need to first select a region. We recommend
 
 Note that different access points indicate different service providers and connection bandwidths. The purchase page displays available service providers and bandwidth values.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83760/156344498635455_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83760/156376600935455_en-US.png)
 
 ## Step 2 Select a service provider {#section_cnv_qmt_ggb .section}
 
