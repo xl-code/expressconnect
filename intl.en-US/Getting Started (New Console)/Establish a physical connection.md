@@ -1,16 +1,16 @@
 # Establish a physical connection {#concept_zmz_dzs_ggb .concept}
 
-This topic describes the methods you can use to access Alibaba Cloud through Express Connect. Specifically, you can apply for a dedicated physical line from your telecom carrier or carriers, or use Express Cloud Connect.
+This topic describes the physical connection methods you can use to access Alibaba Cloud through Express Connect. Specifically, you can apply for a dedicated physical line from your service provider or providers, or use Express Cloud Connect.
 
 ## Use Express Cloud Connect {#section_qj5_kzs_ggb .section}
 
 You can connect to Alibaba Cloud through Express Cloud Connect and an Internet connection, as shown in the following figure.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83738/156112865745512_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83738/156376598445512_en-US.png)
 
 ## Apply for a physical line {#section_ttl_3dt_ggb .section}
 
-You can apply for a physical line from your telecom carrier or carriers, and connect your on-premises data center to an Alibaba Cloud access point through this physical line. This physical connection method needs to occupy a physical port of Alibaba Cloud. The following figure shows the overall connection process.![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83738/156112865735446_en-US.png)
+You can apply for a physical line from your service provider or providers, and connect your on-premises data center to an Alibaba Cloud access point through this physical line. This physical connection method needs to occupy a physical port of Alibaba Cloud. The following figure shows the overall connection process.![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83738/156376598535446_en-US.png)
 
 ## Differences between the two physical connection methods {#section_hwq_hft_ggb .section}
 
@@ -21,8 +21,8 @@ You can apply for a physical line from your telecom carrier or carriers, and con
 -   Alibaba Cloud services: OSS, DTS, RDS, DNS, and NAT.
 
  |Connects on-premises data centers and VPCs.|
-|Billing|Express Cloud Connect is based on Smart Access Gateway. No initial installation fee, resource occupation fee, or outbound traffic fee is charged. Only Express Cloud Connect service fee is charged. For more information, see [Billing of Express Cloud Connect instances](../../../../reseller.en-US/Pricing/Billing of Express Cloud Connect instances.md#).|An initial installation fee and an interface fee are charged by Alibaba Cloud. An installation fee and a bandwidth fee are charged by carriers. For more information, see [Billing of physical connections](../../../../reseller.en-US/Pricing/Billing of physical connections.md#).
+|Billing|Express Cloud Connect is based on Smart Access Gateway. No initial installation fee, resource occupation fee, or outbound traffic fee is charged. Only Express Cloud Connect service fee is charged. For more information, see [Billing of Express Cloud Connect instances](../../../../intl.en-US/Pricing/Billing of Express Cloud Connect instances.md#)|An initial installation fee and an interface fee are charged by Alibaba Cloud. Other construction and bandwidth rental fees are charged by the service provider. For more information, see [Billing of physical connections](../../../../intl.en-US/Pricing/Billing of physical connections.md#).
 
  |
-|Process|For detailed procedures, see [EN-US\_TP\_162666.md\#](reseller.en-US/Express Cloud Connect (Beta)/Activate Express Cloud Connect.md#).|For detailed procedures, see [EN-US\_TP\_21425.md\#](reseller.en-US/Physical Connection/Apply for leased line connection.md#).|
+|Process|For detailed procedures, see [EN-US\_TP\_162666.md\#](intl.en-US/Express Cloud Connect (Beta)/Activate Express Cloud Connect.md#).|For detailed procedures, see [EN-US\_TP\_21425.md\#](intl.en-US/Physical Connection/Apply for a physical connection interface.md#).|
 
