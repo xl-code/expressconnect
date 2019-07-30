@@ -32,7 +32,7 @@ BGP的使用限制如下：
 3.  选择一个地域，然后单击目标VBR的ID。
 4.  单击**BGP组**页签，然后单击**创建BGP组**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21437/156447304112049_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21437/156447849312049_zh-CN.png)
 
 5.  配置BGP组，然后单击**确定**。
 
@@ -53,7 +53,7 @@ BGP的使用限制如下：
 3.  选择一个地域，然后单击目标VBR的ID。
 4.  单击**BGP邻居**页签，然后单击**创建BGP邻居**。
 
-    ![BGP邻居](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21437/156447304112050_zh-CN.png)
+    ![BGP邻居](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21437/156447849312050_zh-CN.png)
 
 5.  添加BGP邻居，然后单击**确定**。
 
@@ -62,7 +62,7 @@ BGP的使用限制如下：
     |**BGP组**|选择要加入的BGP组。|
     |**BGP邻居IP**|输入BGP邻居IP。|
 
-    ![BGP邻居状态](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21437/156447304253875_zh-CN.png)
+    ![BGP邻居状态](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21437/156447849353875_zh-CN.png)
 
     BGP邻居状态说明如下：
 
@@ -86,14 +86,14 @@ BGP的使用限制如下：
 
 在配置BGP邻居后，您需要宣告云上VPC的网段，完成BGP配置。BGP正常建立后，边界路由器会自动学习本地IDC的网段。
 
-完成以下操作，宣告本地IDC的网段：
+完成以下操作，宣告云上VPC的网段：
 
 1.  登录[高速通道管理控制台](https://expressconnectnext.console.aliyun.com)。
 2.  在左侧导航栏，单击**物理专线连接** \> **边界路由器（VBR）**。
 3.  选择一个地域，然后单击目标VBR的ID。
 4.  单击**宣告BGP网段**页签，然后单击**宣告BGP网段**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21437/156447304212051_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21437/156447849412051_zh-CN.png)
 
 5.  输入要宣告的网段，然后单击**确定**。
 
