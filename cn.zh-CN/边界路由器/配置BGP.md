@@ -32,7 +32,7 @@ BGP的使用限制如下：
 3.  选择一个地域，然后单击目标VBR的ID。
 4.  单击**BGP组**页签，然后单击**创建BGP组**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21437/156014945212049_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21437/156447304112049_zh-CN.png)
 
 5.  配置BGP组，然后单击**确定**。
 
@@ -53,7 +53,7 @@ BGP的使用限制如下：
 3.  选择一个地域，然后单击目标VBR的ID。
 4.  单击**BGP邻居**页签，然后单击**创建BGP邻居**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21437/156014945212050_zh-CN.png)
+    ![BGP邻居](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21437/156447304112050_zh-CN.png)
 
 5.  添加BGP邻居，然后单击**确定**。
 
@@ -62,10 +62,29 @@ BGP的使用限制如下：
     |**BGP组**|选择要加入的BGP组。|
     |**BGP邻居IP**|输入BGP邻居IP。|
 
+    ![BGP邻居状态](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21437/156447304253875_zh-CN.png)
+
+    BGP邻居状态说明如下：
+
+    -   **Idle**：空闲，Idle是BGP连接的第一个状态，在空闲状态，BGP等待一个启动事件，启动事件出现后，BGP初始化资源，复位连接重试计时器（Connect-Retry），发起一条TCP连接，同时转入Connect（连接）状态。
+    -   **Connect**：连接，在Connect 状态，BGP发起第一个TCP连接，如果连接重试计时器（Connect-Retry）超时，则重新发起TCP连接，并继续保持在Connect状态。
+        -   如果TCP连接成功，转入OpenSent状态。
+        -   如果TCP连接失败，则转入Active状态。
+    -   **Active**：活跃，在Active状态，BGP尝试建立TCP连接，如果连接重试计时器（Connect-Retry）超时，则退回到Connect 状态。
+        -   如果TCP连接成功，转入OpenSent 状态。
+        -   如果TCP连接失败，则继续保持在Active状态，并继续发起TCP连接。
+    -   **OpenSent**：打开消息已发送，在OpenSent 状态，TCP连接已经建立，BGP已经发送了第一个Open报文，BGP等待其对等体发送Open报文并对收到的Open报文进行正确性检查。
+        -   如果有错误，系统发送一条出错通知消息并退回到Idle状态。
+        -   如果没有错误，BGP开始发送Keepalive报文，并复位Keepalive计时器，开始计时，同时转入OpenConfirm状态。
+    -   **OpenConfirm**：打开消息确认状态，在OpenConfirm状态，BGP发送一个Keepalive报文，同时复位保持计时器。
+        -   如果收到一个Keepalive报文，转入Established 阶段，BGP邻居关系建立完成。
+        -   如果TCP连接中断，则退回到Idle状态。
+    -   **Established**：在Established状态，表示BGP邻居关系已经建立，BGP与邻居交换Update报文，同时复位保持计时器。
+    -   **UnEstablished**：未建立BGP邻居状态。
 
 ## 步骤三 宣告BGP网段 {#section_lbw_wzx_dfb .section}
 
-在配置BGP邻居后，您需要宣告本地IDC的网段，完成BGP配置。
+在配置BGP邻居后，您需要宣告云上VPC的网段，完成BGP配置。BGP正常建立后，边界路由器会自动学习本地IDC的网段。
 
 完成以下操作，宣告本地IDC的网段：
 
@@ -74,7 +93,7 @@ BGP的使用限制如下：
 3.  选择一个地域，然后单击目标VBR的ID。
 4.  单击**宣告BGP网段**页签，然后单击**宣告BGP网段**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21437/156014945212051_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21437/156447304212051_zh-CN.png)
 
 5.  输入要宣告的网段，然后单击**确定**。
 
