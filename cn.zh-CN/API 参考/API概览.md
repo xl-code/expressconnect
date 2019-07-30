@@ -24,7 +24,7 @@
 |[EnablePhysicalConnection](https://help.aliyun.com/document_detail/109015.html?)|调用EnablePhysicalConnection接口开通处于Confirmed状态的物理专线，开通完成后物理专线进入Enabled状态。|
 |[ModifyPhysicalConnectionAttribute](https://help.aliyun.com/document_detail/109013.html?)|调用ModifyPhysicalConnectionAttribute接口修改物理专线的配置。|
 |[TerminatePhysicalConnection](https://help.aliyun.com/document_detail/109014.html?)|在物理专线开通后调用TerminatePhysicalConnection接口终止物理专线接入。|
-|[ApplyPhysicalConnectionLOA](../../../../cn.zh-CN/API参考/物理专线/ApplyPhysicalConnectionLOA.md#)|调用ApplyPhysicalConnectionLOA申请LOA。|
+|[../../../../dita-oss-bucket/SP\_22/DNVPC11886329/ZH-CN\_TP\_134132.md\#](../../../../cn.zh-CN/API参考/物理专线/ApplyPhysicalConnectionLOA.md#)|调用ApplyPhysicalConnectionLOA申请LOA。|
 |[CompletePhysicalConnectionLOA](https://help.aliyun.com/document_detail/112124.html?)|调用CompletePhysicalConnectionLOA完成施工完竣。|
 |[CreatePhysicalConnectionOccupancyOrder](https://help.aliyun.com/document_detail/120031.html?)|调用CreatePhysicalConnectionOccupancyOrder创建资源占用费订单。|
 |[CreatePhysicalConnectionSetupOrder](https://help.aliyun.com/document_detail/112126.html?)|调用CreatePhysicalConnectionSetupOrder创建初装费订单。|
@@ -38,4 +38,6 @@
 |[ModifyExpressCloudConnectionAttribute](../../../../cn.zh-CN/API参考/高速上云服务/ModifyExpressCloudConnectionAttribute.md#)|调用ModifyExpressCloudConnectionAttribute修改高速上云服务连接。|
 |[ModifyExpressCloudConnectionBandwidth](../../../../cn.zh-CN/API参考/高速上云服务/ModifyExpressCloudConnectionBandwidth.md#)|调用ModifyExpressCloudConnectionBandwidth修改高速上云服务带宽。|
 |[DescribeExpressCloudConnections](../../../../cn.zh-CN/API参考/高速上云服务/DescribeExpressCloudConnections.md#)|调用DescribeExpressCloudConnections查询某个区域的高速上云服务列表。|
+|[AssociatePhysicalConnectionToVirtualBorderRouter](../../../../cn.zh-CN/API参考/边界路由器/AssociatePhysicalConnectionToVirtualBorderRouter.md#)|调用AssociatePhysicalConnectionToVirtualBorderRouter将VBR关联物理专线。|
+|[UnassociatePhysicalConnectionFromVirtualBorderRouter](../../../../cn.zh-CN/API参考/边界路由器/UnassociatePhysicalConnectionFromVirtualBorderRouter.md#)|调用UnassociatePhysicalConnectionFromVirtualBorderRouter解绑VBR和物理专线。|
 
