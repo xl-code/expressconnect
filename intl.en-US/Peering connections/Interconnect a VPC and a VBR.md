@@ -3,7 +3,7 @@
 You can fulfill intercommunication between a VPC and a Virtual Border Router \(VBR\) by creating a peering connection.
 
 1.  Log on to the [Express Connect](https://expressconnectnext.console.aliyun.com) console. 
-2.  In the left-side navigation pane, choose **VPC Peering Connections** \> **VBR-to-VPC**. 
+2.  In the left-side navigation pane, choose **VPC Peering Connections** \> **VBR-to-VPC**.
 3.  Click **Create Peering Connection**.
 4.  Configure the peering connection. 
 
@@ -22,7 +22,7 @@ You can fulfill intercommunication between a VPC and a Virtual Border Router \(V
 In this example, select **VBR-to-VPC**.
 
  |
-    |**Routers to Create**|Select the instances to be created:    -   **Initiator and Acceptor**: Both an initiator instance and an acceptor instance are created. After the creation, the initiator instance automatically connects to the acceptor instance.
+    |**Routers to Create**|Select the instances to be created:     -   **Initiator and Acceptor**: Both an initiator instance and an acceptor instance are created. After the creation, the initiator instance automatically connects to the acceptor instance.
 
 This option applies only to connections under the same account.
 
@@ -38,17 +38,17 @@ Only VPC is available for the acceptor router type.
 
 This option applies only to connections between different accounts.
 
-|
+ |
     |**Local Region**|Select the region of the VBR.|
     |**Local Access Point**|Select the access point to which the VBR connects.|
     |**Local VBR ID**|Select the VBR to which you want to establish the connection.|
     |**Peer Region**|Select the region of the peer VPC.|
     |**Peer VPC ID**|Select the ID of the peer VPC.|
-    |**Bandwidth**|Select a bandwidth for the connection.Use the default bandwidth for the acceptor instance.
+    |**Bandwidth**|Select a bandwidth for the connection. Use the default bandwidth for the acceptor instance.
 
-|
-    |**Validity**|Select a validity period for your subscription.If you want the subscription to automatically renew when it expires, select **Auto Renew**.
+ |
+    |**Validity**|Select a validity period for your subscription. If you want the subscription to automatically renew when it expires, select **Auto Renew**.
 
-|
+ |
 
 
