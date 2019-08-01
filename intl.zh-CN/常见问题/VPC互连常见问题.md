@@ -27,17 +27,17 @@
 
 阿里云会根据您购买的路由器接口的规格对应的数据传输能力对数据的传输进行限制。
 
-## 为什么我的账户无法创建对等连接？ {#section_t2n_bjp_m6w .section}
+## 12.为什么我的账户无法创建对等连接？ {#section_t2n_bjp_m6w .section}
 
 高速通道的对等连接功能于2019年6月20日停止售卖，在此之前使用对等连接的用户，不会受到影响，仍然可以继续使用对等连接，未使用过的用户，将无法创建对等连接。
 
 您可以使用云企业网产品代替对等连接来满足您的需求，详情请参见[迁移介绍](../../../../intl.zh-CN/最佳实践/高速通道对等连接迁移方案/迁移介绍.md#)。
 
-## 每个VPC上最多可建立的对等连接接口数量？ {#section_vt0_ntf_bc9 .section}
+## 13.每个VPC上最多可建立的对等连接接口数量？ {#section_vt0_ntf_bc9 .section}
 
 默认是10个，您可以在高速通道[配额管理](https://expressconnect.console.aliyun.com/quota/cn-hangzhou//cn-hangzhou)页面，申请调整名称为**ec\_quota\_vroute\_ri\_num**的配额。
 
-## 每个边界路由器上最多可建立的对等连接接口数量？ {#section_dn2_dp8_31a .section}
+## 14.每个边界路由器上最多可建立的对等连接接口数量？ {#section_dn2_dp8_31a .section}
 
 默认是10个，您可以在高速通道[配额管理](https://expressconnect.console.aliyun.com/quota/cn-hangzhou//cn-hangzhou)页面，申请调整名称为**ec\_quota\_vbr\_ri\_num**的配额。
 
