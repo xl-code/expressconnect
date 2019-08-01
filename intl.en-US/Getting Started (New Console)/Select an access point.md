@@ -12,9 +12,9 @@ For more information about how to apply for a physical connection interface, see
 
 When you select an access point, you need to first select a region. We recommend that you select a region that is closest in geographic proximity to your on-premises data center. In this example, select China \(Beijing\).
 
-Note that different access points indicate different service providers and connection bandwidths. The purchase page displays available service providers and bandwidth values.
+Note that different access points have different service providers and connection bandwidths. The purchase page displays available service providers and bandwidth values.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83760/156376600935455_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/83760/156462414335455_en-US.png)
 
 ## Step 2 Select a service provider {#section_cnv_qmt_ggb .section}
 
@@ -32,9 +32,9 @@ Select an electrical or optical port:
 
     **Note:** 
 
-    -   100Base-T: indicates a 100M electrical port.
-    -   1000Base-T: indicates a 1000M electrical port.
--   Optical ports are commonly known as bare optical fibers. If you choose optical ports, service providers do not need to convert the optical cable of the transmission network at the access points. Users can use optical cables directly. Theoretically, the speed of an optical path is unlimited. The speed only depends on the negotiation of optical modules at both ends of the interconnection. The speed can be 1000M, 10G, 40G, or 100G. Alibaba Cloud data centers provide 1000M and 10G single-mode modules with a transmission distance of 10 km free of charge. If you need modules with a longer distance, you need to purchase the modules by yourself.
+    -   100Base-T: Indicates a 100M electrical port.
+    -   1000Base-T: Indicates a 1000M electrical port.
+-   Optical ports are commonly known as bare optical fibers. If you choose optical ports, service providers do not need to convert the optical cable of the transmission network at the access points. Users can use optical cables directly. Theoretically, the speed of an optical path is unlimited. The speed only depends on the negotiation of optical modules at both ends of the connection. The speed can be 1000M, 10G, 40G, or 100G. Alibaba Cloud data centers provide 1000M and 10G single-mode modules with a transmission distance of 10 km free of charge. If you need modules with a longer distance, you need to purchase the modules by yourself.
 
 
 According to the preceding description, available access points for the on-premises data center in this example include Beijing-Daxing-A, Beijing-Daxing-B, Beijing-Fengtai-A, Beijing-Yizhuang A, and Bejing-Yizhuang-B. The available ports are 10G optical ports.
