@@ -5,9 +5,9 @@ Before you can establish a physical connection, you need to connect the leased l
 Before you apply for a physical connection interface, note the following restrictions:
 
 -   Physical connections do not support interfaces of SDH 155M CPOS, V.35 or G.703.
--   Alibaba Cloud provides multiple access points in all regions, except the China \(Qingdao\) and US \(Silicon Valley\) regions. Additionally, different access points may have different service provider restrictions. For more information, see [Access points](intl.en-US/Physical Connection/Access points.md#).
+-   Alibaba Cloud provides multiple access points in all regions, except the China \(Qingdao\) and US \(Silicon Valley\) regions. Additionally, different access points may have different service provider restrictions. For more information, see [Access points](reseller.en-US/Physical Connection/Access points.md#).
 
-1.  Log on to the [Express Connect](https://expressconnectnext.console.aliyun.com) console. 
+1.  Log on to the [Express Connect](https://partners-intl.console.aliyun.com/#/ri) console. 
 2.  In the left-side navigation pane, choose **Physical Connections** \> **Physical Connection Interfaces**.
 3.  Click **Apply for New Interface**.
 4.  Configure the physical connection interface, and complete the payment for an initial installation fee. 
@@ -71,7 +71,7 @@ Before you apply for a physical connection interface, note the following restric
 
     The physical connection interface enters the **Approved LOA** state. Click **View LOA** in the **Actions** column to view the installation information, such as the data center location of Alibaba Cloud, cabinet location, and port information.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21425/156473270139771_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21425/156473281139771_en-US.png)
 
 10. At this stage, we recommend that you instruct your installation company to start installation. After installation is complete, click **Delivery Report** on the Physical Connection Interfaces page, enter the leased line code and the label numbers of the cables at the site of the Alibaba Cloud data center, and click **OK**. 
 
@@ -84,7 +84,7 @@ Before you apply for a physical connection interface, note the following restric
 12. After you confirm that the physical connection interface has been deployed, pay the resource fee****and****enable the port.
 13. After payment, the physical connection interface changes to the **Enabled** state, indicating that the leased line connection is completed. 
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21425/156473270112047_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21425/156473281212047_en-US.png)
 
     **Note:** The estimated time frame of completing the LOA application, construction, and on-site assistance from Alibaba Cloud is subject to local laws and authorities.
 
