@@ -1,11 +1,11 @@
 # Apply for a physical connection interface {#task_r3h_qfx_dfb .task}
 
-Before you can establish a physical connection, you need to connect the leased line from your service provider to an Alibaba Cloud access point by applying for a physical connection interface in the Express Connect console.
+You need to apply for a physical connection interface to connect the leased line from your service provider to an Alibaba Cloud access point before you can establish a physical connection.
 
-Before you apply for a physical connection interface, note the following restrictions:
+Before applying for a physical connection interface, pay attention to the following restrictions:
 
--   Physical connections do not support interfaces of SDH 155M CPOS, V.35 or G.703.
--   Alibaba Cloud provides multiple access points in all regions, except the China \(Qingdao\) and US \(Silicon Valley\) regions. Additionally, different access points may have different service provider restrictions. For more information, see [Access points](reseller.en-US/Physical Connection/Access points.md#).
+-   Access through ports such as 155M CPOS, V.35, and G.703 of the SDH protocol is not supported.
+-   Alibaba Cloud provides multiple access points in each available region, except the China \(Qingdao\) and US \(Silicon Valley\) regions. Different access points have different service provider restrictions. For more information, see [Select an access point](../reseller.en-US/Getting Started (New Console)/Select an access point.md#).
 
 1.  Log on to the [Express Connect](https://partners-intl.console.aliyun.com/#/ri) console. 
 2.  In the left-side navigation pane, choose **Physical Connections** \> **Physical Connection Interfaces**.
@@ -14,13 +14,13 @@ Before you apply for a physical connection interface, note the following restric
 
     |Configuration|Description|
     |:------------|:----------|
-    |**Region**|Select the region where the leased line is deployed. We recommend that you install the leased line in the region that is the same as your VPC. If you choose a different region, you need to pay an extra fee incurred by cross-region Cloud Enterprise Network \(CEN\) or a peering connection.
+    |**Region**|Select the region where the leased line is deployed. We recommend that you install the leased line in the region of your VPC. If you choose a different region, you need to pay an extra fee incurred by cross-region Cloud Enterprise Network \(CEN\) or a peering connection.
 
  |
-    |**SP**|Select the service provider \(telecom carrier\) of the leased line. Different access points are provided for different service providers.
+    |**SP**|Select the service provider of the leased line. Different access points are provided for different service providers.
 
  |
-    |**Access Point**| Different access points are provided for different service providers.
+    |**Access Point**| Select an access point that is closest to your on-premises data center.
 
  Access points are the on-premises data centers of Alibaba Cloud that are located in multiple regions. Each region has one or more access points. Different access points correspond to different access locations and have different access capabilities. You can open a ticket to obtain detailed information about the location of access points.
 
@@ -28,16 +28,16 @@ Before you apply for a physical connection interface, note the following restric
     |**Port Specification**|Port specifications include 1G and below, 10G, 40G, and 100G. If you select 40G or 100G, you need to enable a whitelist. **Note:** Different specifications incur different resource occupation fees.
 
  |
-    |**Port Type**|Select the access port type. Available port types vary according to the selected access point. The console displays the available port types.
+    |**Port Type**|Select the access port type. Available port types vary according to the selected access point. The console displays available port types.
 
-**Note:** Available port types vary according to the selected access point and service provider. We recommend that you consult the service provider before applying for a port.
+**Note:** Available port types vary according to the selected access points and service providers. We recommend that you consult the service provider before applying for a port.
 
  |
-    |**Redundant Connection ID**|Select a requested physical connection to provide an Equal-Cost Multi-Path routing \(ECMP\) redundant link for this physical connection. Two physical connections that belong to the same region can be used as redundant physical connections.     -   When accessing different access points, both physical connections naturally provide redundancy to each other.
+    |**Redundant Connection ID**|Select a requested physical connection to provide an Equal-Cost Multi-Path routing \(ECMP\) redundant link for this physical connection. Two physical connections accessing the same region can be used as redundant physical connections.     -   When accessing different access points, both physical connections naturally provide redundancy to each other.
     -   When both physical connections access the same access point, you need to specify one as the redundancy of the other. Redundant physical connections are allocated to different physical access devices.
  |
 
-5.  Go back to the Physical Connection Interfaces page and check the physical connection interface for which you have applied. 
+5.  Return to the Physical Connection Interfaces page to check the physical connection interface you have applied for. 
 
     The physical connection interface is in the **To Apply for LOA** state.
 
@@ -71,21 +71,21 @@ Before you apply for a physical connection interface, note the following restric
 
     The physical connection interface enters the **Approved LOA** state. Click **View LOA** in the **Actions** column to view the installation information, such as the data center location of Alibaba Cloud, cabinet location, and port information.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21425/156473281139771_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21425/156473299139771_en-US.png)
 
 10. At this stage, we recommend that you instruct your installation company to start installation. After installation is complete, click **Delivery Report** on the Physical Connection Interfaces page, enter the leased line code and the label numbers of the cables at the site of the Alibaba Cloud data center, and click **OK**. 
 
     The physical connection interface enters the **Waiting** state.
 
-11. Alibaba Cloud will connect the cables to the corresponding CSW ports according to the information you provided. Alibaba Cloud should complete this step within two working days of you clicking OK in the preceding step. 
+11. Alibaba Cloud will connect the cables to the corresponding CSW ports according to the information you provided. Alibaba Cloud should complete this step within two working days of you clicking **OK** in the preceding step. 
 
     The physical connection interface enters the **Waiting** state.
 
-12. After you confirm that the physical connection interface has been deployed, pay the resource fee****and****enable the port.
+12. After you confirm that the physical connection interface has been deployed, pay the resource fee and enable the port.
 13. After payment, the physical connection interface changes to the **Enabled** state, indicating that the leased line connection is completed. 
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21425/156473281212047_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/21425/156473299112047_en-US.png)
 
-    **Note:** The estimated time frame of completing the LOA application, construction, and on-site assistance from Alibaba Cloud is subject to local laws and authorities.
+    **Note:** The estimated time frame of completing the LOA application, installation, and on-site assistance from Alibaba Cloud is subject to local laws and authorities.
 
 
