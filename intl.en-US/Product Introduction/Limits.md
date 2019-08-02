@@ -4,7 +4,7 @@ Note the following limits before you use the Express Connect service.
 
 |Item|Quota|Can I apply for an increase to the quota?|
 |:---|:----|-----------------------------------------|
-|The maximum number of physical connections that an account can establish at an access point|2|Yes. You can apply for an increase to the quota by opening a ticket.|
+|The maximum number of physical connections that an account can establish at an access point|2|Yes. You can apply for an increase to the quota by using the [quota management](https://expressconnect.console.aliyun.com/quota/cn-hangzhou//cn-hangzhou) function.|
 |The maximum number of Virtual Border Routers \(VBRs\) that can be created in a physical connection|5|Yes. You can apply for an increase to the quota by using the [quota management](https://expressconnect.console.aliyun.com/quota/cn-hangzhou//cn-hangzhou) function.|
 |The maximum number of idle VBRs \(VBRs without interfaces\) under an account|5|No.|
 |The maximum number of VBRs that an account can create for other accounts.|2|No.|
