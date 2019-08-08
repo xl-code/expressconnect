@@ -24,7 +24,7 @@ This topic lists available APIs of Express Connect.
 |[EnablePhysicalConnection](https://help.aliyun.com/document_detail/109015.html?)|Enables a physical connection that is in the Confirmed state. After a physical connection is enabled, it enters the Enabled state.|
 |[ModifyPhysicalConnectionAttribute](https://help.aliyun.com/document_detail/109013.html?)|Modifies the configurations of a physical connection.|
 |[TerminatePhysicalConnection](https://help.aliyun.com/document_detail/109014.html?)|Terminates a physical connection after the physical connection is enabled.|
-|[ApplyPhysicalConnectionLOA](../../../../intl.en-US/API reference/Physical connection/ApplyPhysicalConnectionLOA.md#)|Submits an application for the LOA.|
+|[ApplyPhysicalConnectionLOA](../../../../reseller.en-US/API reference/Physical connection/ApplyPhysicalConnectionLOA.md#)|Submits an application for the LOA.|
 |[CompletePhysicalConnectionLOA](https://help.aliyun.com/document_detail/112124.html?)|Reports information about the completed installation of the leased line.|
 |[CreatePhysicalConnectionOccupancyOrder](https://help.aliyun.com/document_detail/120031.html?)|Creates an order for the resource occupation fee.|
 |[CreatePhysicalConnectionSetupOrder](https://help.aliyun.com/document_detail/112126.html?)|Creates an order for the initial installation fee.|
