@@ -10,7 +10,7 @@ This topic describes how to use Express Connect to connect two VPCs under differ
 
 In cross-account VPC interconnections, you need to create an initiator and an acceptor separately, establish a peering connection, and then configure routes. This topic uses the following two VPCs as an example. VPC1 under account A acts as the initiator and VPC2 under account B acts as the acceptor.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/156113029911706_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/156579385711706_en-US.png)
 
 ## Prerequisites {#section_kdw_xbr_ydb .section}
 
@@ -47,7 +47,7 @@ To create an initiator, follow these steps:
 5.  Click **Buy Now** and complete the payment.
 6.  Go back to the VPC Peering Connections page to check the created initiator instance.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/15611303004203_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/15657938584203_en-US.png)
 
 
 ## Step 2: Create an acceptor {#section_ugv_m3n_cfb .section}
@@ -82,7 +82,7 @@ To create an acceptor, follow these steps:
 5.  Click **Buy Now** and complete the payment.
 6.  On the VPC Peering Connections page, check the created acceptor instance and note down its ID. In this example, the acceptor instance ID is ri-2zeix2q86uoyisagyz0pn.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/15611303004204_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/15657938584204_en-US.png)
 
 
 ## Step 3: Add the initiator {#section_w2d_l3f_hfb .section}
@@ -99,7 +99,7 @@ To add the initiator for the acceptor, follow these steps:
 
 4.  Find the created acceptor instance and click **Add Initiator**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/156113030013085_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/156579385813085_en-US.png)
 
 5.  On the Add Instance page, select **Another Account** and enter the initiator router interface. In this example, enter ri-m5e33r3n78zyi5573kf85. Click **OK**.
 
@@ -117,16 +117,16 @@ In this example, the connection initiator is VPC1 under account A. To establish 
 
 4.  Click **Add Acceptor**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/156113030011720_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/156579385811720_en-US.png)
 
 5.  On the Add Instance page, select **Another Account** and enter the acceptor router interface. In this example, enter ri-2zeix2q86uoyisagyz0pn. Click **OK**.
-6.  Choose **![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/156113030011689_en-US.png)** \> **Initiate Connection**.
+6.  Choose **![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/156579385911689_en-US.png)** \> **Initiate Connection**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/156113030113014_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/156579385913014_en-US.png)
 
     When the connection is established, the initiator and the acceptor enter the activated state.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/156113030111684_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/156579385911684_en-US.png)
 
 
 ## Step 5: Configure routes {#section_tdw_xbr_ydb .section}
@@ -139,7 +139,7 @@ To configure the routes, follow these steps:
 2.  On the VPC Peering Connections page, find the created peering connection.
 3.  Find the initiator instance and click **Route Settings**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/156113030113123_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/156579385913123_en-US.png)
 
 4.  Click **Add Route**, enter the CIDR block of the VPC or VSwitch to be connected, and click **Confirm**.
 
@@ -148,7 +148,7 @@ To configure the routes, follow these steps:
 5.  Log on to the [Express Connect console](https://partners-intl.console.aliyun.com/#/ri) by using the credentials of account B.
 6.  Find the acceptor instance and click **Route Settings**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/156113030111721_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13829/156579385911721_en-US.png)
 
 7.  Click **Add Route**, enter the destination CIDR block, and then click **Confirm**.
 
@@ -169,7 +169,7 @@ This topic uses the ECS instances and security groups in the following table as 
 
 You can view the account ID in the [Account Center](https://account.console.aliyun.com/?spm=5176.2020520001.aliyun_topbar.39.4cb94bd3LoJmJ3#/secure).
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/156113030113186_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/13830/156579386013186_en-US.png)
 
 To configure the security group rule, follow these steps:
 
