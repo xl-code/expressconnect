@@ -6,7 +6,7 @@ This topic lists available APIs of Express Connect.
 
 |API|Description|
 |:--|:----------|
-|[CreateVirtualBorderRouter](https://help.aliyun.com/document_detail/124791.htm)|Creates a Virtual Border Router \(VBR\).|
+|[CreateVirtualBorderRouter](https://help.aliyun.com/document_detail/124791.htm)|Creates a VBR.|
 |[DescribeVirtualBorderRouters](https://help.aliyun.com/document_detail/109032.html?)|Queries one or more VBRs.|
 |[DescribeVirtualBorderRoutersForPhysicalConnection](https://help.aliyun.com/document_detail/109033.html)|Queries the VBRs associated with a physical connection, including the VBRs under the physical connection owner's account and other accounts.|
 |[ModifyVirtualBorderRouterAttribute](https://help.aliyun.com/document_detail/109035.html)|Modifies the configurations of a VBR.|
@@ -24,7 +24,7 @@ This topic lists available APIs of Express Connect.
 |[EnablePhysicalConnection](https://help.aliyun.com/document_detail/109015.html?)|Enables a physical connection that is in the Confirmed state. After a physical connection is enabled, it enters the Enabled state.|
 |[ModifyPhysicalConnectionAttribute](https://help.aliyun.com/document_detail/109013.html?)|Modifies the configurations of a physical connection.|
 |[TerminatePhysicalConnection](https://help.aliyun.com/document_detail/109014.html?)|Terminates a physical connection after the physical connection is enabled.|
-|[../../../../dita-oss-bucket/SP\_22/DNVPC11886329/EN-US\_TP\_134132.md\#](../../../../reseller.en-US/API reference/Physical connection/ApplyPhysicalConnectionLOA.md#)|Submits an application for the LOA.|
+|.[ApplyPhysicalConnectionLOA](../../../../reseller.en-US/API reference/Physical connection/ApplyPhysicalConnectionLOA.md#)|Submits an application for the LOA.|
 |[CompletePhysicalConnectionLOA](https://help.aliyun.com/document_detail/112124.html?)|Reports information about the completed installation of the leased line.|
 |[CreatePhysicalConnectionOccupancyOrder](https://help.aliyun.com/document_detail/120031.html?)|Creates an order for the resource occupation fee.|
 |[CreatePhysicalConnectionSetupOrder](https://help.aliyun.com/document_detail/112126.html?)|Creates an order for the initial installation fee.|
